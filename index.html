@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio | CV & Resume</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f5f7fb;
+        --card: #ffffff;
+        --text: #1f2937;
+        --muted: #4b5563;
+        --accent: #2563eb;
+        --border: #dbe2ef;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 1rem 3rem;
+      }
+
+      .hero,
+      section {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin-top: 0;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 0.35rem;
+      }
+
+      h2 {
+        color: var(--accent);
+        border-bottom: 2px solid var(--border);
+        padding-bottom: 0.35rem;
+        margin-bottom: 1rem;
+      }
+
+      .subtitle,
+      .meta {
+        color: var(--muted);
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem 1.25rem;
+        margin-top: 0.5rem;
+      }
+
+      ul {
+        margin: 0.25rem 0 0;
+      }
+
+      .grid {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .grid.two {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+
+      .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 0;
+        list-style: none;
+      }
+
+      .tag-list li {
+        background: #e5edff;
+        color: #1d4ed8;
+        border: 1px solid #c7d7fe;
+        border-radius: 999px;
+        padding: 0.25rem 0.75rem;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      @media print {
+        body {
+          background: #fff;
+          font-size: 12px;
+        }
+
+        .container {
+          max-width: 100%;
+          padding: 0;
+        }
+
+        .hero,
+        section {
+          border: 0;
+          box-shadow: none;
+          padding: 0.5rem 0;
+          margin: 0;
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <h1>Your Name</h1>
+        <p class="subtitle">Portfolio, CV & Resume</p>
+        <p>
+          Adapt this page with your personal details to present your experience,
+          achievements, and contact information in one place.
+        </p>
+        <div class="meta">
+          <span>Email: your.email@example.com</span>
+          <span>Phone: +1 (000) 000-0000</span>
+          <span>Location: Your City, Country</span>
+          <span>LinkedIn: linkedin.com/in/your-profile</span>
+        </div>
+      </header>
+
+      <section aria-labelledby="summary-title">
+        <h2 id="summary-title">Professional Summary</h2>
+        <p>
+          Results-driven professional with strong communication and problem-solving
+          skills. Experienced in delivering high-quality outcomes and collaborating
+          across teams to meet deadlines and business goals.
+        </p>
+      </section>
+
+      <section aria-labelledby="experience-title">
+        <h2 id="experience-title">Work Experience</h2>
+        <article>
+          <h3>Job Title — Company Name</h3>
+          <p class="meta">Jan 2023 - Present</p>
+          <ul>
+            <li>Delivered measurable project outcomes and improved key metrics.</li>
+            <li>Collaborated with cross-functional teams to ship new initiatives.</li>
+            <li>Mentored teammates and improved team productivity.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section aria-labelledby="projects-title">
+        <h2 id="projects-title">Highlighted Projects</h2>
+        <div class="grid two">
+          <article>
+            <h3>Project One</h3>
+            <p>
+              Short description of the project, your role, and the value it
+              delivered.
+            </p>
+          </article>
+          <article>
+            <h3>Project Two</h3>
+            <p>
+              Add another project to demonstrate your breadth and technical
+              capability.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="education-title">
+        <h2 id="education-title">Education</h2>
+        <article>
+          <h3>Degree — University Name</h3>
+          <p class="meta">2018 - 2022</p>
+          <p>Relevant coursework, honors, and notable achievements.</p>
+        </article>
+      </section>
+
+      <section aria-labelledby="skills-title">
+        <h2 id="skills-title">Skills</h2>
+        <ul class="tag-list">
+          <li>Leadership</li>
+          <li>Project Management</li>
+          <li>Communication</li>
+          <li>Problem Solving</li>
+          <li>Technical Writing</li>
+          <li>Data Analysis</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
