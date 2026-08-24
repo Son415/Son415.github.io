@@ -1,314 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Son Nguyen | Systems Researcher &amp; Backend Engineer</title>
-  <meta name="description" content="Son Nguyen — PhD student in Computer Science & Engineering at UC Santa Cruz. Backend systems, low-level infrastructure, and carbon-aware computing research." />
-  <meta name="author" content="Son Nguyen" />
-  <meta name="theme-color" content="#0F6F5C" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Son Nguyen</title>
+<meta name="description" content="Son Nguyen — PhD student in Computer Science & Engineering at UC Santa Cruz.">
 
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Son Nguyen | Systems Researcher & Backend Engineer" />
-  <meta property="og:description" content="PhD student in Computer Science & Engineering at UC Santa Cruz. Backend systems, low-level infrastructure, and carbon-aware computing research." />
-  <meta name="twitter:card" content="summary" />
+<!-- Devicon: icon set for languages/tools. CSS only, no JS. https://devicon.dev -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
-
-  <!-- Custom styles -->
-  <link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="page">
 
-<a class="visually-hidden-focusable skip-link" href="#main">Skip to main content</a>
+  <aside class="sidebar">
+    <img src="assets/images/profile.jpg" alt="Son Nguyen" class="profile-photo">
+    <h1>Son Nguyen</h1>
+    <p class="subtitle">PhD Student in Computer Science &amp; Engineering<br>UC Santa Cruz</p>
+    <p class="meta">
+      <a href="mailto:snguye75@ucsc.edu">snguye75@ucsc.edu</a><br>
+      <a href="https://github.com/SonNguyen415" target="_blank" rel="noopener">github.com/SonNguyen415</a><br>
+      Santa Cruz, CA
+    </p>
 
-<nav class="navbar navbar-expand-md fixed-top" id="mainNav">
-  <div class="container">
-    <a class="navbar-brand" href="#top">Son Nguyen</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    <hr>
+
+    <h2>About</h2>
+    <div class="about-text">
+      <p>
+        I'm a software engineer and researcher with hands-on experience designing, building, and
+        deploying backend systems and low-level infrastructure across both industry and research
+        settings. My work focuses on systems-level techniques that improve the performance and
+        reliability of large-scale cloud systems, data centers, and embedded and edge environments.
+      </p>
+      <p>
+        As a Graduate Researcher in UC Santa Cruz's Sustainable Systems Lab, I developed LiteCast,
+        a lightweight SARIMAX-based forecasting method for carbon-aware job scheduling &mdash; helping
+        data centers shift work to lower-carbon periods without sacrificing performance or requiring
+        large amounts of training data.
+      </p>
+    </div>
+  </aside>
+
+  <main class="content">
+
+    <section id="skills">
+      <h2>Skills</h2>
+
+      <h3>Focus Areas</h3>
+      <ul class="tag-list">
+        <li>Systems Design</li>
+        <li>Backend &amp; Infrastructure</li>
+        <li>Cloud Architecture</li>
+        <li>Microservices</li>
+        <li>API Design</li>
+        <li>RESTful Web Services</li>
+        <li>Databases</li>
+        <li>DevOps</li>
+        <li>Testing</li>
+        <li>Code Reviews</li>
+        <li>Documentation</li>
       </ul>
-    </div>
-  </div>
-</nav>
 
-<main id="main">
+      <h3>Technologies</h3>
+      <ul class="icon-list">
+        <li><i class="devicon-python-plain colored"></i> Python</li>
+        <li><i class="devicon-c-plain colored"></i> C</li>
+        <li><i class="devicon-cplusplus-plain colored"></i> C++</li>
+        <li><i class="devicon-rust-plain colored"></i> Rust</li>
+        <li><i class="devicon-java-plain colored"></i> Java</li>
+        <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+        <li><i class="devicon-typescript-plain colored"></i> TypeScript</li>
+        <li><i class="devicon-mongodb-plain colored"></i> MongoDB</li>
+        <li><i class="devicon-amazonwebservices-original colored"></i> AWS</li>
+        <li><i class="devicon-linux-plain colored"></i> Linux Kernel</li>
+        <li><i class="devicon-kubernetes-plain colored"></i> Kubernetes</li>
+      </ul>
+    </section>
 
-  <header class="hero" id="top">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-8">
-          <p class="eyebrow"><span class="prompt-symbol">$</span> whoami</p>
-          <h1>Son Nguyen</h1>
-          <p class="hero-role">PhD Student in Computer Science &amp; Engineering, UC Santa Cruz</p>
-          <p class="hero-lede">
-            I build backend systems and low-level infrastructure — researching ways to make
-            large-scale cloud systems, data centers, and edge environments faster, more reliable,
-            and more sustainable.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="assets/resume/Son_Nguyen_Resume.pdf" target="_blank" rel="noopener">
-              <i class="bi bi-file-earmark-arrow-down" aria-hidden="true"></i> Résumé
-            </a>
-            <a class="btn btn-outline" href="#contact">Get in touch</a>
-            <a class="icon-link" href="https://github.com/SonNguyen415" target="_blank" rel="noopener" aria-label="Son Nguyen on GitHub">
-              <i class="bi bi-github" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-4 text-center">
-          <div class="avatar-placeholder" aria-hidden="true">SN</div>
-        </div>
+    <section id="research-experience">
+      <h2>Research Experience</h2>
+
+      <div class="entry">
+        <h3>Graduate Researcher @ LiteCast Research, UCSC Sustainable Systems Lab <span class="date">(Jan 2026 &ndash; Jul 2026)</span></h3>
+        <ul>
+          <li>Built a lightweight SARIMAX-based method to forecast data center carbon emissions and schedule jobs during low-carbon periods.</li>
+          <li>Reached 95% carbon optimality using 52x less data than state-of-the-art methods, with no forecast-accuracy comparison required.</li>
+          <li>Designed and deployed 3 models across 50 grid regions on Kubernetes, predicting 1.6M+ data points across 365 forecasts per year.</li>
+          <li>Benchmarked against EnsembleCI, CarbonCast, and LightGBM, showing stronger results with less data via SARIMAX's exogenous variables.</li>
+        </ul>
       </div>
-    </div>
-  </header>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h2 class="section-title"><span>// whoami</span> About</h2>
-      <div class="row">
-        <div class="col-lg-9">
-          <p>
-            I'm a software engineer and researcher with hands-on experience designing, building,
-            and deploying backend systems and low-level infrastructure across both industry and
-            research settings. My work focuses on systems-level techniques that improve the
-            performance and reliability of large-scale cloud systems, data centers, and
-            embedded and edge environments.
-          </p>
-          <p>
-            As a Graduate Researcher in UC Santa Cruz's Sustainable Systems Lab, I developed
-            LiteCast, a lightweight SARIMAX-based forecasting method for carbon-aware job
-            scheduling — helping data centers shift work to lower-carbon periods without
-            sacrificing performance or requiring large amounts of training data.
-          </p>
-        </div>
+      <div class="entry">
+        <h3>Researcher @ LibGLP-1 Research, GW Systems Lab <span class="date">(Mar 2025 &ndash; Aug 2025)</span></h3>
+        <ul>
+          <li>Extended the ELFIO library to support in-place section creation for binary patching.</li>
+          <li>Parsed and split ELF binaries into data and text sections to enable clean, targeted removal.</li>
+          <li>Debloated software by 50%+ using static analysis to strip unused sections and cut memory use.</li>
+          <li>Validated functionality against real-world libraries, including OpenSSL and OpenCV.</li>
+        </ul>
       </div>
-    </div>
-  </section>
 
-  <section id="skills" class="section alt">
-    <div class="container">
-      <h2 class="section-title"><span>// stack</span> Skills</h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <h3 class="skills-group-title">Focus Areas</h3>
-          <ul class="tag-list">
-            <li>Systems Design</li>
-            <li>Backend &amp; Infrastructure</li>
-            <li>Cloud Architecture</li>
-            <li>Microservices</li>
-            <li>API Design</li>
-            <li>RESTful Web Services</li>
-            <li>Databases</li>
-            <li>DevOps</li>
-            <li>Testing</li>
-            <li>Code Reviews</li>
-            <li>Documentation</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <h3 class="skills-group-title">Languages &amp; Tools</h3>
-          <ul class="tag-list">
-            <li>Python</li>
-            <li>C</li>
-            <li>C++</li>
-            <li>Rust</li>
-            <li>Java</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>MongoDB</li>
-            <li>AWS</li>
-            <li>Linux Kernel</li>
-            <li>Kubernetes</li>
-          </ul>
-        </div>
+      <div class="entry">
+        <h3>Undergraduate Researcher @ Composer Research, GW Systems Lab <span class="date">(Jul 2024 &ndash; Nov 2024)</span></h3>
+        <ul>
+          <li>Compared Composer and CAmkES, highlighting CAmkES's lack of explicit user-level virtual resource allocation.</li>
+          <li>Updated, integrated, and evaluated initialization time for Patina, an RTOS API.</li>
+          <li>Found Composer added minimal overhead &mdash; just microseconds &mdash; at the service and application level.</li>
+        </ul>
       </div>
-    </div>
-  </section>
 
-  <section id="experience" class="section">
-    <div class="container">
-      <h2 class="section-title"><span>// log</span> Experience</h2>
-      <ol class="timeline">
-
-        <li class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>Graduate Researcher — LiteCast Research</h3>
-              <span class="timeline-date">2026-01 &rarr; 2026-07</span>
-            </div>
-            <p class="timeline-org">UCSC Sustainable Systems Lab</p>
-            <ul>
-              <li>Built a lightweight SARIMAX-based method to forecast data center carbon emissions and schedule jobs during low-carbon periods.</li>
-              <li>Reached 95% carbon optimality using 52x less data than state-of-the-art methods, with no forecast-accuracy comparison required.</li>
-              <li>Designed and deployed 3 models across 50 grid regions on Kubernetes, predicting 1.6M+ data points across 365 forecasts per year.</li>
-              <li>Benchmarked against EnsembleCI, CarbonCast, and LightGBM, showing stronger results with less data via SARIMAX's exogenous variables.</li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>Researcher — LibGLP-1 Research</h3>
-              <span class="timeline-date">2025-03 &rarr; 2025-08</span>
-            </div>
-            <p class="timeline-org">GW Systems Lab</p>
-            <ul>
-              <li>Extended the ELFIO library to support in-place section creation for binary patching.</li>
-              <li>Parsed and split ELF binaries into data and text sections to enable clean, targeted removal.</li>
-              <li>Debloated software by 50%+ using static analysis to strip unused sections and cut memory use.</li>
-              <li>Validated functionality against real-world libraries, including OpenSSL and OpenCV.</li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>Fullstack Engineer Intern</h3>
-              <span class="timeline-date">2025-02 &rarr; 2025-04</span>
-            </div>
-            <p class="timeline-org">XSTAR Fund Management LLC</p>
-            <ul>
-              <li>Found and fixed frontend bugs on a portfolio investment platform, including form inputs, SSN/ITIN formatting, missing fields, and broken error handling.</li>
-              <li>Improved data integrity by adding input sanitization and validation ahead of database writes.</li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>Undergraduate Researcher — Composer Research</h3>
-              <span class="timeline-date">2024-07 &rarr; 2024-11</span>
-            </div>
-            <p class="timeline-org">GW Systems Lab</p>
-            <ul>
-              <li>Compared Composer and CAmkES, highlighting CAmkES's lack of explicit user-level virtual resource allocation.</li>
-              <li>Updated, integrated, and evaluated initialization time for Patina, an RTOS API.</li>
-              <li>Found Composer added minimal overhead — just microseconds — at the service and application level.</li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>Undergraduate Researcher</h3>
-              <span class="timeline-date">2024-01 &rarr; 2024-05</span>
-            </div>
-            <p class="timeline-org">GW Systems Lab, The George Washington University</p>
-            <ul>
-              <li>Developed a C-based tracing and debugging library to log and retrieve events for OS research.</li>
-              <li>Kept event logging under 100 CPU cycles using lockless data structures, compile-time argument counts, and function inlining.</li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>Backend Engineer Intern</h3>
-              <span class="timeline-date">2022-06 &rarr; 2023-05</span>
-            </div>
-            <p class="timeline-org">SciQuel, Development Team</p>
-            <ul>
-              <li>Designed and built REST APIs with Express, including user authentication and password recovery.</li>
-              <li>Maintained SciQuel's MongoDB database of articles and metadata, resolving inconsistencies via automated scripts and schema enforcement.</li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>Team Leader — Design Build Fly's Testing Team</h3>
-              <span class="timeline-date">2022-09 &rarr; 2023-04</span>
-            </div>
-            <p class="timeline-org">The George Washington University</p>
-            <ul>
-              <li>Led a 4-person team building an Arduino embedded system to capture flight speed, wind speed, pressure, and location data.</li>
-              <li>Visualized flight performance with Python/Plotly and identified components needing rebuilds or improvement.</li>
-              <li>Ran workshops on data analysis, visualization, and development using Pandas, Matplotlib, and Arduino.</li>
-            </ul>
-          </div>
-        </li>
-
-      </ol>
-    </div>
-  </section>
-
-  <section id="education" class="section alt">
-    <div class="container">
-      <h2 class="section-title"><span>// edu</span> Education</h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="edu-card">
-            <h3>PhD, Computer Science &amp; Engineering</h3>
-            <p class="edu-school">University of California, Santa Cruz</p>
-            <p class="edu-meta">2025-09 &rarr; 2030-06 &middot; 4.0 GPA</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="edu-card">
-            <h3>BS, Computer Science</h3>
-            <p class="edu-school">The George Washington University</p>
-            <p class="edu-meta">2021-08 &rarr; 2025-05 &middot; 3.79 GPA</p>
-          </div>
-        </div>
+      <div class="entry">
+        <h3>Undergraduate Researcher @ GW Systems Lab, The George Washington University <span class="date">(Jan 2024 &ndash; May 2024)</span></h3>
+        <ul>
+          <li>Developed a C-based tracing and debugging library to log and retrieve events for OS research.</li>
+          <li>Kept event logging under 100 CPU cycles using lockless data structures, compile-time argument counts, and function inlining.</li>
+        </ul>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="section contact-section">
-    <div class="container text-center">
-      <h2 class="section-title"><span>// contact</span> Contact</h2>
-      <p class="contact-lede">Always happy to talk systems, infrastructure, or carbon-aware computing.</p>
-      <a class="btn btn-primary btn-lg" href="mailto:snguye75@ucsc.edu">Say hello</a>
-      <div class="contact-links">
-        <a href="mailto:snguye75@ucsc.edu"><i class="bi bi-envelope" aria-hidden="true"></i> snguye75@ucsc.edu</a>
-        <a href="https://github.com/SonNguyen415" target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i> github.com/SonNguyen415</a>
-        <span><i class="bi bi-geo-alt" aria-hidden="true"></i> Santa Cruz, CA</span>
+    <section id="work-experience">
+      <h2>Work Experience</h2>
+
+      <div class="entry">
+        <h3>Fullstack Engineer Intern @ XSTAR Fund Management LLC <span class="date">(Feb 2025 &ndash; Apr 2025)</span></h3>
+        <ul>
+          <li>Found and fixed frontend bugs on a portfolio investment platform, including form inputs, SSN/ITIN formatting, missing fields, and broken error handling.</li>
+          <li>Improved data integrity by adding input sanitization and validation ahead of database writes.</li>
+        </ul>
       </div>
-    </div>
-  </section>
 
-</main>
+      <div class="entry">
+        <h3>Backend Engineer Intern @ SciQuel, Development Team <span class="date">(Jun 2022 &ndash; May 2023)</span></h3>
+        <ul>
+          <li>Designed and built REST APIs with Express, including user authentication and password recovery.</li>
+          <li>Maintained SciQuel's MongoDB database of articles and metadata, resolving inconsistencies via automated scripts and schema enforcement.</li>
+        </ul>
+      </div>
 
-<footer class="site-footer">
-  <div class="container text-center">
-    <p>&copy; <span id="year"></span> Son Nguyen. Built with Bootstrap.</p>
-  </div>
-</footer>
+      <div class="entry">
+        <h3>Team Leader @ Design Build Fly's Testing Team, The George Washington University <span class="date">(Sep 2022 &ndash; Apr 2023)</span></h3>
+        <ul>
+          <li>Led a 4-person team building an Arduino embedded system to capture flight speed, wind speed, pressure, and location data.</li>
+          <li>Visualized flight performance with Python/Plotly and identified components needing rebuilds or improvement.</li>
+          <li>Ran workshops on data analysis, visualization, and development using Pandas, Matplotlib, and Arduino.</li>
+        </ul>
+      </div>
+    </section>
 
-<noscript>
-  <style>.section { opacity: 1 !important; transform: none !important; }</style>
-</noscript>
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="education-list">
+        <li><strong>PhD, Computer Science &amp; Engineering</strong> &mdash; University of California, Santa Cruz <span class="date">(Sep 2025 &ndash; Jun 2030)</span> &middot; 4.0 GPA</li>
+        <li><strong>BS, Computer Science</strong> &mdash; The George Washington University <span class="date">(Aug 2021 &ndash; May 2025)</span> &middot; 3.79 GPA</li>
+      </ul>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
-<script src="js/main.js" defer></script>
+  </main>
+</div>
 </body>
 </html>
