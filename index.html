@@ -6,88 +6,96 @@
 <title>Son Nguyen</title>
 <meta name="description" content="Son Nguyen — PhD student in Computer Science & Engineering at UC Santa Cruz.">
 
-<!-- Devicon: icon set for languages/tools. CSS only, no JS. https://devicon.dev -->
+<!-- Tailwind CSS (Play CDN — compiles styles in-browser via a small JS file, no build step) -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Devicon: icon font for languages/tools. CSS only. https://devicon.dev -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
-<link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class="page">
+<body class="bg-gray-50 text-gray-900 antialiased">
+<div class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-[280px_1fr] gap-10">
 
-  <aside class="sidebar">
-    <img src="assets/images/profile.jpeg" alt="Son Nguyen" class="profile-photo">
-    <h1>Son Nguyen</h1>
-    <p class="subtitle">PhD Student in Computer Science &amp; Engineering<br>UC Santa Cruz</p>
-    <p class="meta">
-      <a href="mailto:snguye75@ucsc.edu">snguye75@ucsc.edu</a><br>
-      <a href="https://github.com/SonNguyen415" target="_blank" rel="noopener">github.com/SonNguyen415</a><br>
-      Santa Cruz, CA
-    </p>
+  <!-- Sidebar -->
+  <aside class="md:sticky md:top-12 md:self-start bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
+    <div class="text-center">
+      <img src="assets/images/profile.jpeg" alt="Son Nguyen" class="w-32 h-32 rounded-full object-cover mx-auto mb-4 ring-4 ring-indigo-50">
+      <h1 class="text-xl font-bold">Son Nguyen</h1>
+      <p class="text-sm text-gray-500 mt-1">PhD Student in Computer Science &amp; Engineering<br>UC Santa Cruz</p>
+      <div class="mt-4 text-sm text-gray-600 space-y-1">
+        <p><a href="mailto:snguye75@ucsc.edu" class="hover:text-indigo-600">snguye75@ucsc.edu</a></p>
+        <p><a href="https://github.com/SonNguyen415" target="_blank" rel="noopener" class="hover:text-indigo-600">github.com/SonNguyen415</a></p>
+        <p>Santa Cruz, CA</p>
+      </div>
+    </div>
 
-    <hr>
+    <hr class="my-6 border-gray-200">
 
-    <h2>About</h2>
-    <div class="about-text">
-      <p>
-        I'm a software engineer and researcher with hands-on experience designing, building, and
-        deploying backend systems and low-level infrastructure across both industry and research
-        settings. My work focuses on systems-level techniques that improve the performance and
-        reliability of large-scale cloud systems, data centers, and embedded and edge environments.
-      </p>
-      <p>
-        As a Graduate Researcher in UC Santa Cruz's Sustainable Systems Lab, I developed LiteCast,
-        a lightweight SARIMAX-based forecasting method for carbon-aware job scheduling &mdash; helping
-        data centers shift work to lower-carbon periods without sacrificing performance or requiring
-        large amounts of training data.
-      </p>
+    <div class="text-left">
+      <h2 class="text-base font-semibold mb-3">About</h2>
+      <div class="text-sm text-gray-600 space-y-4 leading-relaxed">
+        <p>
+          I'm a software engineer and researcher with hands-on experience designing, building, and
+          deploying backend systems and low-level infrastructure across both industry and research
+          settings. My work focuses on systems-level techniques that improve the performance and
+          reliability of large-scale cloud systems, data centers, and embedded and edge environments.
+        </p>
+        <p>
+          As a Graduate Researcher in UC Santa Cruz's Sustainable Systems Lab, I developed LiteCast,
+          a lightweight SARIMAX-based forecasting method for carbon-aware job scheduling &mdash; helping
+          data centers shift work to lower-carbon periods without sacrificing performance or requiring
+          large amounts of training data.
+        </p>
+      </div>
     </div>
   </aside>
 
-  <main class="content">
+  <!-- Main content -->
+  <main class="space-y-12">
 
     <section id="skills">
-      <h2>Skills</h2>
+      <h2 class="text-xl font-bold border-b border-gray-200 pb-2 mb-4">Skills</h2>
 
-      <h3>Focus Areas</h3>
-      <ul class="tag-list">
-        <li>Systems Design</li>
-        <li>Backend &amp; Infrastructure</li>
-        <li>Cloud Architecture</li>
-        <li>Microservices</li>
-        <li>API Design</li>
-        <li>RESTful Web Services</li>
-        <li>Databases</li>
-        <li>DevOps</li>
-        <li>Testing</li>
-        <li>Code Reviews</li>
-        <li>Documentation</li>
-      </ul>
+      <h3 class="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-2">Focus Areas</h3>
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="px-3 py-1 text-sm rounded-full bg-indigo-50 text-indigo-700">Systems Design</span>
+        <span class="px-3 py-1 text-sm rounded-full bg-indigo-50 text-indigo-700">Backend &amp; Infrastructure</span>
+        <span class="px-3 py-1 text-sm rounded-full bg-indigo-50 text-indigo-700">Cloud Architecture</span>
+        <span class="px-3 py-1 text-sm rounded-full bg-indigo-50 text-indigo-700">Microservices</span>
+        <span class="px-3 py-1 text-sm rounded-full bg-indigo-50 text-indigo-700">API Design</span>
+        <span class="px-3 py-1 text-sm rounded-full bg-indigo-50 text-indigo-700">RESTful Web Services</span>
+        <span class="px-3 py-1 text-sm rounded-full bg-indigo-50 text-indigo-700">Databases</span>
+        <span class="px-3 py-1 text-sm rounded-full bg-indigo-50 text-indigo-700">DevOps</span>
+        <span class="px-3 py-1 text-sm rounded-full bg-indigo-50 text-indigo-700">Testing</span>
+        <span class="px-3 py-1 text-sm rounded-full bg-indigo-50 text-indigo-700">Code Reviews</span>
+        <span class="px-3 py-1 text-sm rounded-full bg-indigo-50 text-indigo-700">Documentation</span>
+      </div>
 
-      <h3>Technologies</h3>
-      <ul class="icon-list">
-        <li><i class="devicon-python-plain colored"></i> Python</li>
-        <li><i class="devicon-c-plain colored"></i> C</li>
-        <li><i class="devicon-cplusplus-plain colored"></i> C++</li>
-        <li><i class="devicon-rust-plain colored"></i> Rust</li>
-        <li><i class="devicon-java-plain colored"></i> Java</li>
-        <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
-        <li><i class="devicon-typescript-plain colored"></i> TypeScript</li>
-        <li><i class="devicon-mongodb-plain colored"></i> MongoDB</li>
-        <li><i class="devicon-amazonwebservices-plain-wordmark colored"></i> AWS</li>
-        <li><i class="devicon-linux-plain colored"></i> Linux Kernel</li>
-        <li><i class="devicon-kubernetes-plain colored"></i> Kubernetes</li>
-      </ul>
+      <h3 class="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-2">Technologies</h3>
+      <div class="flex flex-wrap gap-3">
+        <span class="flex items-center gap-2 px-3 py-1.5 text-sm rounded-lg bg-white border border-gray-200 shadow-sm"><i class="devicon-python-plain colored text-lg"></i>Python</span>
+        <span class="flex items-center gap-2 px-3 py-1.5 text-sm rounded-lg bg-white border border-gray-200 shadow-sm"><i class="devicon-c-plain colored text-lg"></i>C</span>
+        <span class="flex items-center gap-2 px-3 py-1.5 text-sm rounded-lg bg-white border border-gray-200 shadow-sm"><i class="devicon-cplusplus-plain colored text-lg"></i>C++</span>
+        <span class="flex items-center gap-2 px-3 py-1.5 text-sm rounded-lg bg-white border border-gray-200 shadow-sm"><i class="devicon-rust-plain colored text-lg"></i>Rust</span>
+        <span class="flex items-center gap-2 px-3 py-1.5 text-sm rounded-lg bg-white border border-gray-200 shadow-sm"><i class="devicon-java-plain colored text-lg"></i>Java</span>
+        <span class="flex items-center gap-2 px-3 py-1.5 text-sm rounded-lg bg-white border border-gray-200 shadow-sm"><i class="devicon-javascript-plain colored text-lg"></i>JavaScript</span>
+        <span class="flex items-center gap-2 px-3 py-1.5 text-sm rounded-lg bg-white border border-gray-200 shadow-sm"><i class="devicon-typescript-plain colored text-lg"></i>TypeScript</span>
+        <span class="flex items-center gap-2 px-3 py-1.5 text-sm rounded-lg bg-white border border-gray-200 shadow-sm"><i class="devicon-mongodb-plain colored text-lg"></i>MongoDB</span>
+        <span class="flex items-center gap-2 px-3 py-1.5 text-sm rounded-lg bg-white border border-gray-200 shadow-sm"><i class="devicon-amazonwebservices-plain-wordmark colored text-lg"></i>AWS</span>
+        <span class="flex items-center gap-2 px-3 py-1.5 text-sm rounded-lg bg-white border border-gray-200 shadow-sm"><i class="devicon-linux-plain colored text-lg"></i>Linux Kernel</span>
+        <span class="flex items-center gap-2 px-3 py-1.5 text-sm rounded-lg bg-white border border-gray-200 shadow-sm"><i class="devicon-kubernetes-plain colored text-lg"></i>Kubernetes</span>
+      </div>
     </section>
 
     <section id="research-experience">
-      <h2>Research Experience</h2>
+      <h2 class="text-xl font-bold border-b border-gray-200 pb-2 mb-4">Research Experience</h2>
 
-      <div class="entry">
-        <h3>Graduate Researcher @ UCSC Sustainable Systems Lab <span class="date">(Jan 2026 &ndash; Jul 2026)</span></h3>
-        <div>
-            <i>LiteCast: A Lightweight Middleware for Carbon Optimization</i>
+      <div class="rounded-xl border border-gray-200 bg-white shadow-sm p-5 mb-4 hover:shadow-md transition-shadow">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+          <h3 class="font-semibold">Graduate Researcher @ UCSC Sustainable Systems Lab</h3>
+          <span class="text-xs text-gray-500 whitespace-nowrap">Jan 2026 &ndash; Jul 2026</span>
         </div>
-        <ul>
+        <p class="italic text-sm text-gray-700 mt-2">LiteCast: A Lightweight Middleware for Carbon Optimization</p>
+        <ul class="mt-2 list-disc list-inside text-sm text-gray-600 space-y-1">
           <li>Built a lightweight SARIMAX-based method to forecast data center carbon emissions and schedule jobs during low-carbon periods.</li>
           <li>Reached 95% carbon optimality using 52x less data than state-of-the-art methods, with no forecast-accuracy comparison required.</li>
           <li>Designed and deployed 3 models across 50 grid regions on Kubernetes, predicting 1.6M+ data points across 365 forecasts per year.</li>
@@ -95,60 +103,72 @@
         </ul>
       </div>
 
-
-      <div class="entry">
-        <h3>Undergraduate Researcher @ GW Systems Lab <span class="date">(Jul 2024 &ndash; Aug 2025)</span></h3>
-        <div>
-            <i>LibGLP-1: Symbol-Level Debloating for Shared Libraries</i>
-            <ul>
-                <li>Extended the ELFIO library to support in-place section creation for binary patching.</li>
-                <li>Parsed and split ELF binaries into data and text sections to enable clean, targeted removal.</li>
-                <li>Debloated software by 50%+ using static analysis to strip unused sections and cut memory use.</li>
-                <li>Validated functionality against real-world libraries, including OpenSSL and OpenCV.</li>
-            </ul>
-        </div>
-        <div>
-            <i>Composer: Latency and Criticality Analyses for Component-Level Programming</i>
-            <ul>
-                <li>Compared Composer and CAmkES, highlighting CAmkES's lack of explicit user-level virtual resource allocation.</li>
-                <li>Updated, integrated, and evaluated initialization time for Patina, an RTOS API.</li>
-                <li>Found Composer added minimal overhead &mdash; just microseconds &mdash; at the service and application level.</li>
-            </ul>
+      <div class="rounded-xl border border-gray-200 bg-white shadow-sm p-5 hover:shadow-md transition-shadow">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+          <h3 class="font-semibold">Undergraduate Researcher @ GW Systems Lab</h3>
+          <span class="text-xs text-gray-500 whitespace-nowrap">Jan 2024 &ndash; Aug 2025</span>
         </div>
 
-        <div>
-            <i>OS Research: C-based Tracing and Debugging Library</i>
-            <ul>
-                <li>Developed a C-based tracing and debugging library to log and retrieve events for OS research.</li>
-                <li>Kept event logging under 100 CPU cycles using lockless data structures, compile-time argument counts, and function inlining.</li>
-            </ul>
+        <div class="mt-3">
+          <p class="italic text-sm text-gray-700">LibGLP-1: Symbol-Level Debloating for Shared Libraries</p>
+          <ul class="mt-2 list-disc list-inside text-sm text-gray-600 space-y-1">
+            <li>Extended the ELFIO library to support in-place section creation for binary patching.</li>
+            <li>Parsed and split ELF binaries into data and text sections to enable clean, targeted removal.</li>
+            <li>Debloated software by 50%+ using static analysis to strip unused sections and cut memory use.</li>
+            <li>Validated functionality against real-world libraries, including OpenSSL and OpenCV.</li>
+          </ul>
         </div>
-        
+
+        <div class="mt-4">
+          <p class="italic text-sm text-gray-700">Composer: Latency and Criticality Analyses for Component-Level Programming</p>
+          <ul class="mt-2 list-disc list-inside text-sm text-gray-600 space-y-1">
+            <li>Compared Composer and CAmkES, highlighting CAmkES's lack of explicit user-level virtual resource allocation.</li>
+            <li>Updated, integrated, and evaluated initialization time for Patina, an RTOS API.</li>
+            <li>Found Composer added minimal overhead &mdash; just microseconds &mdash; at the service and application level.</li>
+          </ul>
+        </div>
+
+        <div class="mt-4">
+          <p class="italic text-sm text-gray-700">OS Research: C-based Tracing and Debugging Library</p>
+          <ul class="mt-2 list-disc list-inside text-sm text-gray-600 space-y-1">
+            <li>Developed a C-based tracing and debugging library to log and retrieve events for OS research.</li>
+            <li>Kept event logging under 100 CPU cycles using lockless data structures, compile-time argument counts, and function inlining.</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <section id="work-experience">
-      <h2>Work Experience</h2>
+      <h2 class="text-xl font-bold border-b border-gray-200 pb-2 mb-4">Work Experience</h2>
 
-      <div class="entry">
-        <h3>Fullstack Engineer Intern @ XSTAR Fund Management LLC <span class="date">(Feb 2025 &ndash; Apr 2025)</span></h3>
-        <ul>
+      <div class="rounded-xl border border-gray-200 bg-white shadow-sm p-5 mb-4 hover:shadow-md transition-shadow">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+          <h3 class="font-semibold">Fullstack Engineer Intern @ XSTAR Fund Management LLC</h3>
+          <span class="text-xs text-gray-500 whitespace-nowrap">Feb 2025 &ndash; Apr 2025</span>
+        </div>
+        <ul class="mt-2 list-disc list-inside text-sm text-gray-600 space-y-1">
           <li>Found and fixed frontend bugs on a portfolio investment platform, including form inputs, SSN/ITIN formatting, missing fields, and broken error handling.</li>
           <li>Improved data integrity by adding input sanitization and validation ahead of database writes.</li>
         </ul>
       </div>
 
-      <div class="entry">
-        <h3>Backend Engineer Intern @ SciQuel <span class="date">(Jun 2022 &ndash; May 2023)</span></h3>
-        <ul>
+      <div class="rounded-xl border border-gray-200 bg-white shadow-sm p-5 mb-4 hover:shadow-md transition-shadow">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+          <h3 class="font-semibold">Backend Engineer Intern @ SciQuel</h3>
+          <span class="text-xs text-gray-500 whitespace-nowrap">Jun 2022 &ndash; May 2023</span>
+        </div>
+        <ul class="mt-2 list-disc list-inside text-sm text-gray-600 space-y-1">
           <li>Designed and built REST APIs with Express, including user authentication and password recovery.</li>
           <li>Maintained SciQuel's MongoDB database of articles and metadata, resolving inconsistencies via automated scripts and schema enforcement.</li>
         </ul>
       </div>
 
-      <div class="entry">
-        <h3>Team Leader @ GWU's Design Build Fly's Testing Team<span class="date">(Sep 2022 &ndash; Apr 2023)</span></h3>
-        <ul>
+      <div class="rounded-xl border border-gray-200 bg-white shadow-sm p-5 hover:shadow-md transition-shadow">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+          <h3 class="font-semibold">Team Leader @ GWU's Design Build Fly's Testing Team</h3>
+          <span class="text-xs text-gray-500 whitespace-nowrap">Sep 2022 &ndash; Apr 2023</span>
+        </div>
+        <ul class="mt-2 list-disc list-inside text-sm text-gray-600 space-y-1">
           <li>Led a 4-person team building an Arduino embedded system to capture flight speed, wind speed, pressure, and location data.</li>
           <li>Visualized flight performance with Python/Plotly and identified components needing rebuilds or improvement.</li>
           <li>Ran workshops on data analysis, visualization, and development using Pandas, Matplotlib, and Arduino.</li>
@@ -157,11 +177,32 @@
     </section>
 
     <section id="education">
-      <h2>Education</h2>
-      <ul class="education-list">
-        <li><strong>PhD, Computer Science &amp; Engineering</strong> &mdash; University of California, Santa Cruz <span class="date">(Sep 2025 &ndash; Jun 2030)</span> &middot; 4.0 GPA</li>
-        <li><strong>BS, Computer Science</strong> &mdash; The George Washington University <span class="date">(Aug 2021 &ndash; May 2025)</span> &middot; 3.79 GPA</li>
-      </ul>
+      <h2 class="text-xl font-bold border-b border-gray-200 pb-2 mb-4">Education</h2>
+      <div class="space-y-3">
+        <div class="rounded-xl border border-gray-200 bg-white shadow-sm p-5">
+          <div class="flex flex-wrap items-baseline justify-between gap-2">
+            <h3 class="font-semibold">PhD, Computer Science &amp; Engineering</h3>
+            <span class="text-xs text-gray-500 whitespace-nowrap">Sep 2025 &ndash; Jun 2030</span>
+          </div>
+          <p class="text-sm text-gray-600 mt-1">University of California, Santa Cruz &middot; 4.0 GPA</p>
+        </div>
+        <div class="rounded-xl border border-gray-200 bg-white shadow-sm p-5">
+          <div class="flex flex-wrap items-baseline justify-between gap-2">
+            <h3 class="font-semibold">BS, Computer Science</h3>
+            <span class="text-xs text-gray-500 whitespace-nowrap">Aug 2021 &ndash; May 2025</span>
+          </div>
+          <p class="text-sm text-gray-600 mt-1">The George Washington University &middot; 3.79 GPA</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="text-xl font-bold border-b border-gray-200 pb-2 mb-4">Contact</h2>
+      <div class="rounded-xl border border-gray-200 bg-white shadow-sm p-5 text-sm text-gray-600 space-y-1">
+        <p>Email: <a href="mailto:snguye75@ucsc.edu" class="text-indigo-600 hover:underline">snguye75@ucsc.edu</a></p>
+        <p>GitHub: <a href="https://github.com/SonNguyen415" target="_blank" rel="noopener" class="text-indigo-600 hover:underline">github.com/SonNguyen415</a></p>
+        <p>Location: Santa Cruz, CA</p>
+      </div>
     </section>
 
   </main>
