@@ -10,7 +10,7 @@
 	--t2: #38ccb9; 
 	--t3: #38cc8a;
     --gold: rgba(162, 165, 87, 0.555);
-	--grad-a: linear-gradient(135deg,var(--t1) 0%,var(--t2) 55%,var(--gold) 100%);
+	--grad-a: linear-gradient(135deg,var(--t1) 0%,var(--t2) 55%,var(--t3) 100%);
 	--text: #dce5f2; /* General Text / Hero Bio / Contact Values */
 	--soft: #a6b0c2; /* soft Text / Contact Labels / Education Meta */
     --green: #00af23;
