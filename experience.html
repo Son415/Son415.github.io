@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Experience · Son Nguyen</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css?=v2">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="position-fixed top-0 start-0 end-0">
+	<div class="d-flex align-items-center justify-content-between h-100 px-3 px-md-5">
+		<a href="index.html" class="nav-logo">Son Nguyen</a>
+
+		<div class="d-none d-md-flex align-items-center gap-4">
+			<a href="index.html#about">About</a>
+			<a href="experience.html">Experience</a>
+			<a href="index.html#contact" class="nav-cta">Get in Touch</a>
+		</div>
+
+		<div class="dropdown d-md-none">
+			<button
+				class="btn nav-menu-toggle"
+				type="button"
+				data-bs-toggle="dropdown"
+				aria-expanded="false"
+				aria-label="Open navigation menu">
+				☰
+			</button>
+
+			<ul class="dropdown-menu dropdown-menu-end">
+				<li><a class="dropdown-item" href="index.html#about">About</a></li>
+				<li><a class="dropdown-item" href="experience.html">Experience</a></li>
+				<li><a class="dropdown-item nav-cta" href="index.html#contact">Get in Touch</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<br>
+
+<!-- Research Experience -->
+<section class="section container py-5 d-flex flex-column justify-content-center">
+	<div class="section-header d-flex align-items-baseline justify-content-between flex-wrap gap-2 mb-4 reveal">
+		<span class="section-title">Research Experience</span>
+		<button class="expand-all-btn btn btn-sm" type="button" id="expandResearchBtn">Expand All</button>
+	</div>
+    
+	<!-- Item 1 -->
+	<article class="project-card reveal mb-4" id="work-1">
+		<button 
+			class="project-toggle w-100 text-start bg-transparent border-0 d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center p-3 gap-2" 
+			type="button" 
+			data-bs-toggle="collapse" 
+			data-bs-target="#work-1-panel" 
+			aria-expanded="false" 
+			aria-controls="work-1-panel">
+			<div class="d-flex align-items-baseline gap-3">
+				<span class="project-num fw-bold">01</span>
+				<div>
+					<h2 class="h3 mb-0">LiteCast</h2>
+					<p class="text-secondary mb-0">UCSC Sustainable Systems Lab · Second Author</p>
+				</div>
+			</div>
+			<div class="d-flex align-items-center gap-3">
+				<span class="text-secondary small">January 2026 - July 2026</span>
+				<span class="accordion-icon" aria-hidden="true"></span>
+			</div>
+		</button>
+		
+		<div class="project-collapse collapse" id="work-1-panel">
+        <div class="border-top border-secondary border-opacity-25">
+            <div class="project-main mb-4 px-4 pt-4">
+                <p>
+                    Developed a lightweight forecaster to predict carbon emissions of data centers in each energy production region 
+                    by applying the SARIMAX model for the purpose of job scheduling.
+                </p>
+                <p>
+                    The main problem the paper addresses is the challenge of assigning jobs to data centers in a way that minimizes carbon emissions. 
+                    Across regions and time, data centers have different carbon emission profiles due to variations in energy production methods and grid conditions.
+                    As a result, a scheduler can minimize emissions by assigning jobs to execute at data centers with lower carbon intensity or during low intensity periods.
+                    This was achieved primarily through the insight that the optimality of job scheduling is dependent moreso on concordance (the ranked order of forecasts), 
+                    rather than actual accuracy of the forecasts. 
+                    The insight enables the use of a lightweight model without the use of CNN, allowing for rapid retraining and inference in real-time as new data 
+                    is collected and the development of a middleware system integrated into Kubernetes to schedule jobs based on the forecasts.
+                </p>
+                <div class="mb-3">
+                    <span class="d-block fw-semibold mb-2">KEY CONTRIBUTIONS</span>
+                    <div class="d-flex flex-column gap-3">
+                        <div class="p-3 border-start border-3 border-info bg-dark bg-opacity-25 rounded-end">
+                            <span class="fw-bold d-block mb-1">Concordance-Based Prediction</span>
+                            <p class="mb-0 text-secondary">Developed a middleware that leverages concordance to enhance time series forecasting.
+                                Demonstrating that optimizing for concordance can lead to more effective job scheduling decisions than accuracy metrics.</p>
+                        </div>
+                        <div class="p-3 border-start border-3 border-info bg-dark bg-opacity-25 rounded-end">
+                            <span class="fw-bold d-block mb-1">Time Series Analysis</span>
+                            <p class="mb-0 text-secondary">Conducted comprehensive time series analysis to identify patterns and trends in carbon emission data. 
+                                Utilized statistical methods to obtain optimal parameters for the SARIMAX model such as training length.</p>
+                        </div>
+                        <div class="p-3 border-start border-3 border-info bg-dark bg-opacity-25 rounded-end">
+                            <span class="fw-bold d-block mb-1">Control Theory Adaptation for Model Optimization</span>
+                            <p class="mb-0 text-secondary">Adapted control theory principles to optimize the SARIMAX model's performance, increasing predictive results by 5%.</p>
+                        </div>
+                        <div class="p-3 border-start border-3 border-info bg-dark bg-opacity-25 rounded-end">
+                            <span class="fw-bold d-block mb-1">SOTA Comparison</span>
+                            <p class="mb-0 text-secondary">Reproduced state-of-the-art results in carbon emission forecasting, adapting their models to extend the forecasting horizon. 
+                                Evaluated the models to Litecast, demonstrating the latter's ability to match or exceed performance while utilizing less data without the use of neural networks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <span class="d-block fw-semibold mb-2">RESULTS</span>
+                    <div class="d-flex flex-column gap-2">
+                        <div class="p-3 border-start border-3 border-success bg-dark bg-opacity-25 rounded-end">
+                            <span class="fw-bold d-block">Performance Optimization</span>
+                            <p class="mb-0 text-secondary">Optimized caching strategies and database query execution times, decreasing latency by 25% across microservices.</p>
+                        </div>
+                        <div class="p-3 border-start border-3 border-success bg-dark bg-opacity-25 rounded-end">
+                            <span class="fw-bold d-block">CI/CD &amp; Testing</span>
+                            <p class="mb-0 text-secondary">Implemented automated integration test suites and Docker containers for seamless deployment workflows.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="pill hi">Time Series Analysis</span>
+                    <span class="pill hi">Time Series Forecasting</span>
+                    <span class="pill hi">Kubernetes</span>
+                    <span class="pill">Docker</span>
+                    <span class="pill">Python</span>
+                    <span class="pill">Middleware Design</span>
+                    <span class="pill">CNN</span>
+                </div>
+            </div>
+
+            <div class="project-panel border-top border-secondary border-opacity-25 px-4 py-4">
+                <div class="panel-section-label fw-bold mb-3">DIAGRAMS</div>
+                
+                <div class="d-flex flex-wrap gap-3 align-items-start">
+                    <div class="diagram-box border rounded text-muted">
+                        <img src="assets/images/diagrams/litecast.svg" alt="Litecast Architecture Diagram" class="img-fluid" />
+                        <div class="p-2 border-top border-secondary border-opacity-25 bg-black bg-opacity-25">
+                            <span class="small d-block px-1 text-white-50">System Architecture Overview</span>
+                        </div>
+                    </div>
+                    <div class="diagram-box border rounded text-muted">
+                        <img src="assets/images/diagrams/litecast-pipeline.svg" alt="Litecast Data Pipeline" class="img-fluid" />
+                        <div class="p-2 border-top border-secondary border-opacity-25 bg-black bg-opacity-25">
+                            <span class="small d-block px-1 text-white-50">Data Processing Pipeline</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-demo border-top pt-3">
+                <div class="panel-section-label fw-bold mb-2">Action / Details</div>
+                <div class="demo-footer d-flex justify-content-end">
+                    <a href="#" class="btn btn-sm btn-outline-primary">View Role Details</a>
+                </div>
+            </div>
+        </div>
+        </div>
+	</article>
+</section>
+
+
+<!-- Work Experience -->
+<section class="section container d-flex flex-column justify-content-center">
+	<div class="section-header d-flex align-items-baseline justify-content-between flex-wrap gap-2 mb-4 reveal">
+		<span class="section-title">Work Experience</span>
+		<button class="expand-all-btn btn btn-outline-info btn-sm" type="button" id="expandWorkBtn">Expand All</button>
+	</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer d-flex align-items-center justify-content-between flex-wrap gap-3">
+	<span class="footer-name">Son Nguyen</span>
+	<span class="footer-copy">Email: snguye75@ucsc.edu · Santa Cruz, CA · <span id="yr"></span></span>
+</footer>
+
+<script>
+// Dynamic year in footer
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// Scroll reveal
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('on');
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// Cursor-following glow on project cards
+document.querySelectorAll('.project-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const r = card.getBoundingClientRect();
+    card.style.setProperty('--mx', `${e.clientX - r.left}px`);
+    card.style.setProperty('--my', `${e.clientY - r.top}px`);
+  });
+});
+
+// Sync parent card state on Bootstrap collapse events
+document.querySelectorAll('.project-collapse').forEach(panel => {
+  const card = panel.closest('.project-card');
+  panel.addEventListener('show.bs.collapse', () => card.classList.add('is-open'));
+  panel.addEventListener('hide.bs.collapse', () => card.classList.remove('is-open'));
+});
+
+// Expand All / Collapse All functionality
+function bindExpandBtn(btnId, sectionSelector) {
+  const btn = document.getElementById(btnId);
+  const section = document.querySelector(sectionSelector);
+  if (!btn || !section) return;
+
+  // Helper function to sync button label with actual accordion states
+  const updateBtnText = () => {
+    const panels = section.querySelectorAll('.project-collapse');
+    if (!panels.length) return;
+    
+    // Check if at least one panel is hidden
+    const anyClosed = Array.from(panels).some(p => !p.classList.contains('show'));
+    btn.textContent = anyClosed ? 'Expand All' : 'Collapse All';
+  };
+
+  // Toggle all cards when the button is clicked
+  btn.addEventListener('click', () => {
+    const panels = section.querySelectorAll('.project-collapse');
+    const anyClosed = Array.from(panels).some(p => !p.classList.contains('show'));
+
+    panels.forEach(panel => {
+      const bsCollapse = bootstrap.Collapse.getOrCreateInstance(panel, { toggle: false });
+      anyClosed ? bsCollapse.show() : bsCollapse.hide();
+    });
+  });
+
+  // Listen for individual card toggle events inside the section to update button label
+  section.addEventListener('shown.bs.collapse', updateBtnText);
+  section.addEventListener('hidden.bs.collapse', updateBtnText);
+}
+
+bindExpandBtn('expandResearchBtn', 'section:nth-of-type(1)');
+bindExpandBtn('expandWorkBtn', 'section:nth-of-type(2)');
+
+// URL Hash auto-opener
+function openCardFromHash() {
+  if (!location.hash) return;
+  const target = document.querySelector(location.hash);
+  if (!target) return;
+  const panel = target.querySelector('.project-collapse');
+  if (panel) {
+    bootstrap.Collapse.getOrCreateInstance(panel, { toggle: false }).show();
+    setTimeout(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+  }
+}
+window.addEventListener('hashchange', openCardFromHash);
+openCardFromHash();
+</script>
+
+</body>
+</html>
