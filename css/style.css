@@ -456,77 +456,63 @@ footer {
 /* ──────────────────────────────────────────────
 	EXPERIENCE ACCORDION & CARDS
 ────────────────────────────────────────────── */
-.expand-all-btn {
-  border: 1px solid transparent; /* Keeps layout stable so button doesn't jump */
-  background: transparent;
-  color: var(--soft);
-  transition: border-color 0.2s ease, color 0.2s ease;
+/* Configure Bootstrap Accordion theme colors */
+.accordion {
+    --bs-accordion-bg: var(--dim);
+    --bs-accordion-active-bg: var(--dim);
+    --bs-accordion-border-color: var(--rule);
+    --bs-accordion-btn-color: var(--text);
+    --bs-accordion-active-color: var(--text);
+    --bs-accordion-color: var(--text);
+    --bs-body-color: var(--text);
+    --bs-accordion-btn-focus-box-shadow: none;
 }
 
-/* Hover & Focus states: Highlight border, no background fill */
+.accordion-button::after {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* Accordion card base styling */
+.accordion-item {
+    /* Left border + raise the z-index to above background */
+    border-left: 3px solid var(--t2) !important;
+    z-index: 5;
+
+    /* For mouse tracking */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Mouse tracking glow effect */
+.accordion-item::before {
+    content: '';
+    position: absolute;
+    top: var(--my, -1000px);
+    left: var(--mx, -1000px);
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(140, 193, 199, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 10;
+}
+
+/* Diagram box background */
+.diagram-box {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Expand All button hover states */
+.expand-all-btn {
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--soft);
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
 .expand-all-btn:hover,
 .expand-all-btn:focus-visible {
-  background: transparent;
-  border-color: var(--t1); /* Glowing cyan border */
-  color: var(--t1);
-}
-
-/* Project Card */
-.project-card {
-	background: var(--dim);
-	border-radius: 4px;
-	position: relative;
-	overflow: hidden;
-	transition: border-color 0.25s ease;
-    z-index: 5; 
-    border: 1px solid var(--rule);
-    border-left: 3px solid var(--t2);
-}
-
-/* Add a subtle radial gradient effect on hover */
-.project-card::before {
-	content: '';
-	position: absolute;
-	top: var(--my, -1000px);
-	left: var(--mx, -1000px);
-	width: 400px;
-	height: 400px;
-	transform: translate(-50%, -50%);
-	background: radial-gradient(circle, rgba(140, 193, 199, 0.08) 0%, transparent 70%);
-	pointer-events: none;
-	z-index: 10;
-}
-
-.project-num {
-	color: var(--t1);
-	font-family: 'JetBrains Mono', monospace;
-}
-
-.project-toggle {
-	color: var(--text);
-	cursor: pointer;
-}
-
-/* Create chevron icon using borders and rotation */
-.accordion-icon {
-	width: 12px;
-	height: 12px;
-	border-right: 2px solid var(--soft);
-	border-bottom: 2px solid var(--soft);
-	transform: rotate(45deg);
-	transition: transform 0.25s ease;
-}
-
-/* Rotate the chevron icon when the project card is open */
-.project-card.is-open .accordion-icon {
-	transform: rotate(-135deg);
-}
-
-.project-panel {
-    background: var(--ink);
-    padding: 1rem;
-}
-
-.diagram-box {
-	background: rgba(0, 0, 0, 0.2);
+    background: transparent;
+    border-color: var(--t1);
+    color: var(--t1);
 }

@@ -1,193 +1,676 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Experience · Son Nguyen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience · Son Nguyen</title>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css?=v2">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?=v7">
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
 
 <!-- NAV -->
 <nav class="position-fixed top-0 start-0 end-0">
-	<div class="d-flex align-items-center justify-content-between h-100 px-3 px-md-5">
-		<a href="index.html" class="nav-logo">Son Nguyen</a>
+    <div class="d-flex align-items-center justify-content-between h-100 px-3 px-md-5">
+        <a href="index.html" class="nav-logo">Son Nguyen</a>
 
-		<div class="d-none d-md-flex align-items-center gap-4">
-			<a href="index.html#about">About</a>
-			<a href="experience.html">Experience</a>
-			<a href="index.html#contact" class="nav-cta">Get in Touch</a>
-		</div>
+        <div class="d-none d-md-flex align-items-center gap-4">
+            <a href="index.html#about">About</a>
+            <a href="experience.html">Experience</a>
+            <a href="index.html#contact" class="nav-cta">Get in Touch</a>
+        </div>
 
-		<div class="dropdown d-md-none">
-			<button
-				class="btn nav-menu-toggle"
-				type="button"
-				data-bs-toggle="dropdown"
-				aria-expanded="false"
-				aria-label="Open navigation menu">
-				☰
-			</button>
+        <div class="dropdown d-md-none">
+            <button
+                class="btn nav-menu-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                aria-label="Open navigation menu">
+                ☰
+            </button>
 
-			<ul class="dropdown-menu dropdown-menu-end">
-				<li><a class="dropdown-item" href="index.html#about">About</a></li>
-				<li><a class="dropdown-item" href="experience.html">Experience</a></li>
-				<li><a class="dropdown-item nav-cta" href="index.html#contact">Get in Touch</a></li>
-			</ul>
-		</div>
-	</div>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="index.html#about">About</a></li>
+                <li><a class="dropdown-item" href="experience.html">Experience</a></li>
+                <li><a class="dropdown-item nav-cta" href="index.html#contact">Get in Touch</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
 <br>
 
 <!-- Research Experience -->
 <section class="section container py-5 d-flex flex-column justify-content-center">
-	<div class="section-header d-flex align-items-baseline justify-content-between flex-wrap gap-2 mb-4 reveal">
-		<span class="section-title">Research Experience</span>
-		<button class="expand-all-btn btn btn-sm" type="button" id="expandResearchBtn">Expand All</button>
-	</div>
+    <div class="section-header d-flex align-items-baseline justify-content-between flex-wrap gap-2 mb-4 reveal">
+        <span class="section-title">Research Experience</span>
+        <button class="expand-all-btn btn btn-sm" type="button" id="expandResearchBtn">Expand All</button>
+    </div>
     
-	<!-- Item 1 -->
-	<article class="project-card reveal mb-4" id="work-1">
-		<button 
-			class="project-toggle w-100 text-start bg-transparent border-0 d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center p-3 gap-2" 
-			type="button" 
-			data-bs-toggle="collapse" 
-			data-bs-target="#work-1-panel" 
-			aria-expanded="false" 
-			aria-controls="work-1-panel">
-			<div class="d-flex align-items-baseline gap-3">
-				<span class="project-num fw-bold">01</span>
-				<div>
-					<h2 class="h3 mb-0">LiteCast</h2>
-					<p class="text-secondary mb-0">UCSC Sustainable Systems Lab · Second Author</p>
-				</div>
-			</div>
-			<div class="d-flex align-items-center gap-3">
-				<span class="text-secondary small">January 2026 - July 2026</span>
-				<span class="accordion-icon" aria-hidden="true"></span>
-			</div>
-		</button>
-		
-		<div class="project-collapse collapse" id="work-1-panel">
-        <div class="border-top border-secondary border-opacity-25">
-            <div class="project-main mb-4 px-4 pt-4">
-                <p>
-                    Developed a lightweight forecaster to predict carbon emissions of data centers in each energy production region 
-                    by applying the SARIMAX model for the purpose of job scheduling.
-                </p>
-                <p>
-                    The main problem the paper addresses is the challenge of assigning jobs to data centers in a way that minimizes carbon emissions. 
-                    Across regions and time, data centers have different carbon emission profiles due to variations in energy production methods and grid conditions.
-                    As a result, a scheduler can minimize emissions by assigning jobs to execute at data centers with lower carbon intensity or during low intensity periods.
-                    This was achieved primarily through the insight that the optimality of job scheduling is dependent moreso on concordance (the ranked order of forecasts), 
-                    rather than actual accuracy of the forecasts. 
-                    The insight enables the use of a lightweight model without the use of CNN, allowing for rapid retraining and inference in real-time as new data 
-                    is collected and the development of a middleware system integrated into Kubernetes to schedule jobs based on the forecasts.
-                </p>
-                <div class="mb-3">
-                    <span class="d-block fw-semibold mb-2">KEY CONTRIBUTIONS</span>
-                    <div class="d-flex flex-column gap-3">
-                        <div class="p-3 border-start border-3 border-info bg-dark bg-opacity-25 rounded-end">
-                            <span class="fw-bold d-block mb-1">Concordance-Based Prediction</span>
-                            <p class="mb-0 text-secondary">Developed a middleware that leverages concordance to enhance time series forecasting.
+    <div class="accordion d-flex flex-column gap-4" id="researchAccordion">
+        <!-- Litecast -->
+        <article class="accordion-item reveal" id="research-1">
+            <h2 class="accordion-header" id="research-1-heading">
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#research-1-panel"
+                    aria-expanded="false"
+                    aria-controls="research-1-panel">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2 w-100 me-3">
+                        <div class="d-flex align-items-baseline gap-3">
+                            <span class="fw-bold font-monospace text-info">01</span>
+                            <div>
+                                <h2 class="h3 mb-0">LiteCast</h2>
+                                <p class="fs-6 mb-0">UCSC Sustainable Systems Lab · Second Author</p>
+                            </div>
+                        </div>
+                        <span class="text-secondary">January 2026 - July 2026</span>
+                    </div>
+                </button>
+            </h2>
+
+            <div id="research-1-panel" class="accordion-collapse collapse" aria-labelledby="research-1-heading">
+                <div class="accordion-body">
+                    <!-- SUMMARY -->
+                    <p>
+                        Contributed to Litecast, a lightweight forecaster to predict carbon emissions of data centers in each energy production region
+                        by applying the SARIMAX model for the purpose of job scheduling.
+                    </p>
+                    <p>
+                        Litecast addresses the challenge of assigning jobs to data centers in a way that minimizes carbon emissions.
+                        Across regions and time, data centers have different carbon emission profiles due to variations in energy production methods and grid conditions.
+                        As a result, a scheduler can minimize emissions by assigning jobs to execute at data centers with lower carbon intensity or during low intensity periods.
+                        This was achieved primarily through the insight that the optimality of job scheduling is dependent moreso on concordance (the ranked order of forecasts),
+                        rather than actual accuracy of the forecasts.
+                        The insight enables the use of a lightweight model without the use of CNN, allowing for rapid retraining and inference in real-time as new data
+                        is collected. Leveraging this insight, we developed a concordance-based middleware system integrated into Kubernetes to schedule jobs based on forecasted emissions, 
+                        utilizing the SARIMAX model for time series forecasting.
+                    </p>
+
+                    <!-- CONTRIBUTIONS -->
+                    <div class="mb-4">
+                        <span class="d-block fw-semibold mb-2">KEY CONTRIBUTIONS</span>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Concordance-Based Prediction</span>
+                                <p class="mb-0 text-secondary">Developed a middleware that leverages concordance to enhance time series forecasting.
                                 Demonstrating that optimizing for concordance can lead to more effective job scheduling decisions than accuracy metrics.</p>
-                        </div>
-                        <div class="p-3 border-start border-3 border-info bg-dark bg-opacity-25 rounded-end">
-                            <span class="fw-bold d-block mb-1">Time Series Analysis</span>
-                            <p class="mb-0 text-secondary">Conducted comprehensive time series analysis to identify patterns and trends in carbon emission data. 
+                            </div>
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Time Series Analysis</span>
+                                <p class="mb-0 text-secondary">Conducted comprehensive time series analysis to identify patterns and trends in carbon emission data.
                                 Utilized statistical methods to obtain optimal parameters for the SARIMAX model such as training length.</p>
-                        </div>
-                        <div class="p-3 border-start border-3 border-info bg-dark bg-opacity-25 rounded-end">
-                            <span class="fw-bold d-block mb-1">Control Theory Adaptation for Model Optimization</span>
-                            <p class="mb-0 text-secondary">Adapted control theory principles to optimize the SARIMAX model's performance, increasing predictive results by 5%.</p>
-                        </div>
-                        <div class="p-3 border-start border-3 border-info bg-dark bg-opacity-25 rounded-end">
-                            <span class="fw-bold d-block mb-1">SOTA Comparison</span>
-                            <p class="mb-0 text-secondary">Reproduced state-of-the-art results in carbon emission forecasting, adapting their models to extend the forecasting horizon. 
+                            </div>
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Control Theory Adaptation for Model Optimization</span>
+                                <p class="mb-0 text-secondary">Adapted control theory principles to optimize the SARIMAX model's performance, increasing predictive results by 5%.</p>
+                            </div>
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">SOTA Comparison</span>
+                                <p class="mb-0 text-secondary">Reproduced state-of-the-art results in carbon emission forecasting, adapting their models to extend the forecasting horizon.
                                 Evaluated the models to Litecast, demonstrating the latter's ability to match or exceed performance while utilizing less data without the use of neural networks.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="mb-3">
-                    <span class="d-block fw-semibold mb-2">RESULTS</span>
-                    <div class="d-flex flex-column gap-2">
-                        <div class="p-3 border-start border-3 border-success bg-dark bg-opacity-25 rounded-end">
-                            <span class="fw-bold d-block">Performance Optimization</span>
-                            <p class="mb-0 text-secondary">Optimized caching strategies and database query execution times, decreasing latency by 25% across microservices.</p>
-                        </div>
-                        <div class="p-3 border-start border-3 border-success bg-dark bg-opacity-25 rounded-end">
-                            <span class="fw-bold d-block">CI/CD &amp; Testing</span>
-                            <p class="mb-0 text-secondary">Implemented automated integration test suites and Docker containers for seamless deployment workflows.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex flex-wrap gap-2">
-                    <span class="pill hi">Time Series Analysis</span>
-                    <span class="pill hi">Time Series Forecasting</span>
-                    <span class="pill hi">Kubernetes</span>
-                    <span class="pill">Docker</span>
-                    <span class="pill">Python</span>
-                    <span class="pill">Middleware Design</span>
-                    <span class="pill">CNN</span>
-                </div>
-            </div>
 
-            <div class="project-panel border-top border-secondary border-opacity-25 px-4 py-4">
-                <div class="panel-section-label fw-bold mb-3">DIAGRAMS</div>
-                
-                <div class="d-flex flex-wrap gap-3 align-items-start">
-                    <div class="diagram-box border rounded text-muted">
-                        <img src="assets/images/diagrams/litecast.svg" alt="Litecast Architecture Diagram" class="img-fluid" />
-                        <div class="p-2 border-top border-secondary border-opacity-25 bg-black bg-opacity-25">
-                            <span class="small d-block px-1 text-white-50">System Architecture Overview</span>
+                    <!-- RESULTS -->
+                    <div class="mb-4">
+                        <span class="d-block fw-semibold mb-2">RESULTS</span>
+                        <div class="d-flex flex-column gap-2">
+                            <div class="p-3 border-start border-3 border-success rounded-end">
+                                <span class="fw-bold d-block">Middleware for Job Scheduling</span>
+                                <p class="mb-0 text-secondary">Implemented a middleware integrated with Kubernetes for spatial and temporal job scheduling based on forecasted carbon emissions.</p>
+                            </div>
+                             <div class="p-3 border-start border-3 border-success rounded-end">
+                                <span class="fw-bold d-block">Concordance-based Metric</span>
+                                <p class="mb-0 text-secondary">Demonstrated that concordance is a more reliable and stronger indicator of carbon optimality over accuracy metrics such as MAPE.</p>
+                            </div>
+                            <div class="p-3 border-start border-3 border-success rounded-end">
+                                <span class="fw-bold d-block">Improved Carbon Optimality</span>
+                                <p class="mb-0 text-secondary">Achieved up to 90% carbon optimality in the scheduled jobs.</p>
+                            </div>
+                            <div class="p-3 border-start border-3 border-success rounded-end">
+                                <span class="fw-bold d-block">Reduced Resource Consumption</span>
+                                <p class="mb-0 text-secondary">Achieved competitive or better carbon optimality than SOTA models without requiring the use of neural networks, thus allowing for the use of 52x less data than SOTA models.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="diagram-box border rounded text-muted">
-                        <img src="assets/images/diagrams/litecast-pipeline.svg" alt="Litecast Data Pipeline" class="img-fluid" />
-                        <div class="p-2 border-top border-secondary border-opacity-25 bg-black bg-opacity-25">
-                            <span class="small d-block px-1 text-white-50">Data Processing Pipeline</span>
+
+                    <!-- KEYS -->
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="pill hi">Python</span>
+                        <span class="pill hi">Time Series Analysis</span>
+                        <span class="pill hi">Time Series Forecasting</span>
+                        <span class="pill hi">Kubernetes</span>
+                        <span class="pill">Docker</span>
+                        <span class="pill">Middleware Design</span>
+                        <span class="pill">CNN</span>
+                    </div>
+
+                    <!-- DIAGRAMS -->
+                    <div class="pt-4 border-top border-secondary border-opacity-25">
+                        <div class="fw-bold mb-3">DIAGRAMS</div>
+                        <div class="row g-2 justify-content-center">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="card h-100 border-secondary border-opacity-25 bg-transparent">
+                                    <div class=" bg-black bg-opacity-25 p-2">
+                                        <img src="assets/images/diagrams/litecast.svg" class="img-fluid" alt="Litecast Architecture Diagram">
+                                    </div>
+                                    <div class="p-2 border-top border-secondary border-opacity-25 bg-black mt-auto">
+                                        <span class="small d-block px-1 text-white-50">Litecast Architecture: Litecast leverages exogenous variables such as historical energy and weather data and a time series forecaster (SARIMAX) 
+                                            to predict carbon emissions. The forecaster then leverages a concordance-based heuristic to continuously reforecast and reschedule jobs based on incoming data, leveraging the lightweighted 
+                                            nature of time series forecaster to adaptively retrain every few hours if necessary. </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="card h-100 border-secondary border-opacity-25 bg-transparent">
+                                    <div class=" bg-black bg-opacity-25 p-2">
+                                        <img src="assets/images/diagrams/litecast_96_cont.svg" class="img-fluid" alt="Litecast Example Result">
+                                    </div>
+                                    <div class="p-2 border-top border-secondary border-opacity-25 bg-black mt-auto">
+                                        <span class="small d-block px-1 text-white-50">Scheduling Optimality for Jobs with 96h Slack: Litecast surpasses SOTA model in carbon optimality at shorter slacks while utilizing 52x less data and without requiring CNN.</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="project-demo border-top pt-3">
-                <div class="panel-section-label fw-bold mb-2">Action / Details</div>
-                <div class="demo-footer d-flex justify-content-end">
-                    <a href="#" class="btn btn-sm btn-outline-primary">View Role Details</a>
+        </article>
+
+        <!-- LibGLP-1 -->
+        <article class="accordion-item reveal" id="research-2">
+            <h2 class="accordion-header" id="research-2-heading">
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#research-2-panel"
+                    aria-expanded="false"
+                    aria-controls="research-2-panel">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2 w-100 me-3">
+                        <div class="d-flex align-items-baseline gap-3">
+                            <span class="fw-bold font-monospace text-info">02</span>
+                            <div>
+                                <h2 class="h3 mb-0">LibGLP-1</h2>
+                                <p class="fs-6 mb-0">GW Systems Lab · Second Author</p>
+                            </div>
+                        </div>
+                        <span class="text-secondary">March 2025 - August 2025</span>
+                    </div>
+                </button>
+            </h2>
+
+            <div id="research-2-panel" class="accordion-collapse collapse" aria-labelledby="research-2-heading">
+                <div class="accordion-body">
+                    <!-- SUMMARY -->
+                    <p>
+                        Contributed to LibGlP-1, a toolchain to shrink the file size and memory footprint of shared libraries for the purpose of software debloation.
+                    </p>
+                    <p>
+                        Application softwares can utilize library code either via statically linking at compile time, or dynamically linking with shared libraries at run time.
+                        Static linking allows for the elimination of unused components of the library, but will require a copy of every used function/data in the resulting binary, 
+                        thus resulting in large binaries. Dynamic linking with shared libraries means that such copies are not needed, but
+                        the entirety of the library's binary must be loaded in memory when the library is invoked by but one program. 
+                        In an embedded environment where such memory are limited due to resource constraint, both approaches create wastage in memory.
+                        This paper developed a toolchain that leverages gcc garbage collection mechanism to isolate and eliminate unused functions and data during dynamic linking.
+                        The result is the ability to minimize the size of shared libraries in embedded environment, thereafter reducing the memory consumption of such libraries
+                        during run time. 
+                    </p>
+
+                    <!-- CONTRIBUTIONS -->
+                    <div class="mb-4">
+                        <span class="d-block fw-semibold mb-2">KEY CONTRIBUTIONS</span>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Sectionifier</span>
+                                <p class="mb-0 text-secondary">
+                                    Developed a tool that parses ELF binaries and rewrite them such that the text and data sections, alongside dependencies such as
+                                    relocations, are split. The result is that every function/data object in the binary will have its own section, without the need 
+                                    for time consuming recompilation.
+                                </p>
+                            </div>
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Library Extension</span>
+                                <p class="mb-0 text-secondary">
+                                    Extended the ELFIO library to support in-place section removal, allowing its usage to delete targetted, unused sections.
+                                </p>
+                            </div>
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Debloating libraries</span>
+                                <p class="mb-0 text-secondary">
+                                    Minimized the size of the openSSL as used by vsftpd by applying a static analyzer via pyelftools to identify necessary dependencies and remove
+                                    all unused functions/data objects when compiling.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- RESULTS -->
+                    <div class="mb-4">
+                        <span class="d-block fw-semibold mb-2">RESULTS</span>
+                        <div class="d-flex flex-column gap-2">
+                            <div class="p-3 border-start border-3 border-success rounded-end">
+                                <span class="fw-bold d-block">Reduced Memory Footprint</span>
+                                <p class="mb-0 text-secondary">Achieved up to 70% reduction in memory usage in shared libraries, with some libraries entirely eliminated.</p>
+                            </div>
+                             <div class="p-3 border-start border-3 border-success rounded-end">
+                                <span class="fw-bold d-block">Reduced File Size</span>
+                                <p class="mb-0 text-secondary">Achieved up to 90% reduction in file size of the debloated binaries.</p>
+                            </div>
+                            <div class="p-3 border-start border-3 border-success rounded-end">
+                                <span class="fw-bold d-block">Reduced Remaining Code</span>
+                                <p class="mb-0 text-secondary">Achieved up to 67% reduction in the remaining code after debloating, reducing attack surfaces and improving security.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KEYS -->
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="pill hi">C</span>
+                        <span class="pill hi">C++</span>
+                        <span class="pill hi">Embedded Systems</span>
+                        <span class="pill hi">Binary Patching</span>
+                        <span class="pill hi">Static Analysis</span>
+                        <span class="pill">Operating Systems</span>
+                        <span class="pill">Python</span>
+                        <span class="pill">ELFIO</span>
+                        <span class="pill">Pyelftools</span>
+                    </div>
+
+                    <!-- DIAGRAMS -->
+                    <div class="pt-4 border-top border-secondary border-opacity-25">
+                        <div class="fw-bold mb-3">DIAGRAMS</div>
+                        <div class="row g-2 justify-content-center">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="card h-100 border-secondary border-opacity-25 bg-transparent">
+                                    <div class=" bg-black bg-opacity-25 p-2">
+                                        <img src="assets/images/diagrams/linking.svg" class="img-fluid" alt="Static v. Dynamic Linking">
+                                    </div>
+                                    <div class="p-2 border-top border-secondary border-opacity-25 bg-black mt-auto">
+                                        <span class="small d-block px-1 text-white-50">Static & Dynamic Linking v. LibGLP-1: Static Linking creates copies of code on every resulting binaries. Dynamic Linking allows for reuse but loads unused code at runtime. LibGLP-1 combines the benefits of both approaches.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="card h-100 border-secondary border-opacity-25 bg-transparent">
+                                    <div class=" bg-black bg-opacity-25 p-2">
+                                        <img src="assets/images/diagrams/libglp.svg" class="img-fluid" alt="LibGLP-1 Architecture Diagram">
+                                    </div>
+                                    <div class="p-2 border-top border-secondary border-opacity-25 bg-black mt-auto">
+                                        <span class="small d-block px-1 text-white-50">LibGLP-1 Architecture: The sectionifier converts input binaries into debloating-ready format by placing code/data into fine grained sections. 
+                                            The binary shrinker performs static analysis and relinking to remove unused code.
+                                            The resulting binary can be loaded via a dynamic loader or the provided relocation planner. 
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="card h-100 border-secondary border-opacity-25 bg-transparent">
+                                    <div class=" bg-black bg-opacity-25 p-2">
+                                        <img src="assets/images/diagrams/memory.svg" class="img-fluid" alt="Composite debloating">
+                                    </div>
+                                    <div class="p-2 border-top border-secondary border-opacity-25 bg-black mt-auto">
+                                        <span class="small d-block px-1 text-white-50">Normalized memory footprints of all shared libraries in Composite, compared to original binaries. 
+                                            LibGLP-1 reduced the memory footprint of all shared libraries by 70% in totality, with slmin reduced to 1.5% of original footprint.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="card h-100 border-secondary border-opacity-25 bg-transparent">
+                                    <div class=" bg-black bg-opacity-25 p-2">
+                                        <img src="assets/images/diagrams/elftailor.svg" class="img-fluid" alt="Elftailor v. LibGLP-1">
+                                    </div>
+                                    <div class="p-2 border-top border-secondary border-opacity-25 bg-black mt-auto">
+                                        <span class="small d-block px-1 text-white-50">Comparison between ElfTailor and LibGLP-1 debloated binaries, normalized to undebloated baseline.
+                                            Elftailor reduced the amount of code slightly more than LibGLP-1, but the latter significantly reduced both file size and memory footprint by
+                                            more than 50% than Elftailor.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        </div>
-	</article>
+        </article>
+
+        <!-- Composer -->
+        <article class="accordion-item reveal" id="research-3">
+            <h2 class="accordion-header" id="research-3-heading">
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#research-3-panel"
+                    aria-expanded="false"
+                    aria-controls="research-3-panel">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2 w-100 me-3">
+                        <div class="d-flex align-items-baseline gap-3">
+                            <span class="fw-bold font-monospace text-info">03</span>
+                            <div>
+                                <h2 class="h3 mb-0">Composer</h2>
+                                <p class="fs-6 mb-0">GW Systems Lab · Third Author</p>
+                            </div>
+                        </div>
+                        <span class="text-secondary">July 2024 - November 2024</span>
+                    </div>
+                </button>
+            </h2>
+
+            <div id="research-3-panel" class="accordion-collapse collapse" aria-labelledby="research-3-heading">
+                <div class="accordion-body">
+                    <!-- SUMMARY -->
+                    <p>
+                        Contributed to Composer, a build-time framework for component-based operating systems that enables static analysis and orchestration of system composition 
+                        around non-functional properties like timing predictability, resource isolation, and interference mitigation.
+                    </p>
+                    <p>
+                        Component-based systems offer modularity and extensibility, but reasoning about non-functional properties—how components interact, share resources, 
+                        and interfere with each other—remains challenging. Composer addresses this by taking a system specification that defines components, 
+                        their dependencies, and virtual resources, then performing static analysis to derive a system-level model capturing how these properties relate. 
+                        This enables the design of predictable, analyzable, and resource-efficient real-time systems, particularly in mixed-criticality environments where 
+                        low-assurance tasks must not compromise high-criticality guarantees. The framework orchestrates resource allocation, identifies interference paths, 
+                        and performs binary analysis to optimize stack sizes and minimize capability exposure, adhering to the Principle of Least Privilege.
+                    </p>
+
+
+                    <!-- CONTRIBUTIONS -->
+                    <div class="mb-4">
+                        <span class="d-block fw-semibold mb-2">KEY CONTRIBUTIONS</span>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Comparative Architecture Analysis</span>
+                                <p class="mb-0 text-secondary"> Compared Composer's explicit virtual resource abstraction with CAmkES's capability-based approach, 
+                                    demonstrating that Composer's user-level virtual resource allocation enables superior visibility and control over 
+                                    resource sharing and criticality-aware interference analysis that CAmkES lacks.</p>
+                            </div>
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">RTOS Integration</span>
+                                <p class="mb-0 text-secondary">
+                                    Updated and integrated Patina, an RTOS API layer providing common OS services (scheduling, channels, events, timers), 
+                                    with Composer's analysis and runtime composition framework, ensuring correct component initialization ordering and resource allocation.
+                                </p>
+                            </div>
+
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Patina Evaluation</span>
+                                <p class="mb-0 text-secondary">
+                                    Measured and evaluated Composer's initialization overhead across component types, showing that Composer incur negligible additional cost for core component types,
+                                    and showing that overhead for service-level components are minimal (on the order of microseconds).
+                                </p>
+                            </div>
+
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Capability Minimization via Static Analysis</span>
+                                <p class="mb-0 text-secondary">Applied Composer's binary and inter-component analysis to shrink synchronous invocation capability footprints, 
+                                    demonstrating significant reduction in unnecessarily granted capabilities across component-based systems to minimize attack surface.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RESULTS -->
+                    <div class="mb-4">
+                        <span class="d-block fw-semibold mb-2">RESULTS</span>
+                        <div class="d-flex flex-column gap-2">
+                            <div class="p-3 border-start border-3 border-success rounded-end">
+                                <span class="fw-bold d-block">Minimal Initialization Overhead</span>
+                                <p class="mb-0 text-secondary">Composer incurred similar initialization overhead for core component types, with additional cost being less than 10 microseconds for service-level components.</p>
+                            </div>
+                            <div class="p-3 border-start border-3 border-success rounded-end">
+                                <span class="fw-bold d-block">Attack Surface Reduction via Capability Minimization</span>
+                                <p class="mb-0 text-secondary">Composer's static analysis removed nearly two-thirds of synchronous invocation capabilities across all evaluated Patina configurations, 
+                                    reducing the capability footprint to less than 40% while maintaining functional correctness and significantly reducing attack surface.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KEYS -->
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="pill hi">C</span>
+                        <span class="pill hi">Component-Based Systems</span>
+                        <span class="pill hi">Mixed-Criticality Systems</span>
+                        <span class="pill hi">Static Analysis</span>
+                        <span class="pill">Real-time Systems</span>
+                        <span class="pill">Resource Allocation</span>
+                        <span class="pill">Composite OS</span>
+                        <span class="pill">Performance Analysis</span>
+                        <span class="pill">Capability-based Security</span>
+                    </div>
+
+                    <!-- DIAGRAMS -->
+                    <div class="pt-4 border-top border-secondary border-opacity-25">
+                        <div class="fw-bold mb-3">DIAGRAMS</div>
+                        <div class="row g-2 justify-content-center">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="card h-100 border-secondary border-opacity-25 bg-transparent">
+                                    <div class=" bg-black bg-opacity-25 p-2">
+                                        <img src="assets/images/diagrams/components.svg" class="img-fluid" alt="Component Based System Diagram">
+                                    </div>
+                                    <div class="p-2 border-top border-secondary border-opacity-25 bg-black mt-auto">
+                                        <span class="small d-block px-1 text-white-50">Composer's core design goals: 
+                                            (a) extensibility via component polymorphism, 
+                                            (b) minimality by omitting unused components, 
+                                            (c) principle of least privilege through capability restriction, 
+                                            (d) principle of least common mechanism by isolating different criticality levels.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="card h-100 border-secondary border-opacity-25 bg-transparent">
+                                    <div class=" bg-black bg-opacity-25 p-2">
+                                        <img src="assets/images/diagrams/composer.svg" class="img-fluid" alt="Composer Architecture Diagram">
+                                    </div>
+                                    <div class="p-2 border-top border-secondary border-opacity-25 bg-black mt-auto">
+                                        <span class="small d-block px-1 text-white-50">Composer's workflow: system specification is analyzed to derive resource allocations, 
+                                            criticality-aware interactions, and component dependencies. The resulting configuration guides runtime composition, ensuring each component receives only its designated resources and minimal necessary access rights.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="card h-100 border-secondary border-opacity-25 bg-transparent">
+                                    <div class=" bg-black bg-opacity-25 p-2">
+                                        <img src="assets/images/diagrams/initialization.svg" class="img-fluid" alt="Composer Initialization Results">
+                                    </div>
+                                    <div class="p-2 border-top border-secondary border-opacity-25 bg-black mt-auto">
+                                        <span class="small d-block px-1 text-white-50">Composer added little to negligible overhead to the initialization of core components, 
+                                            while the added initialization of service and application components are in the range of microseconds</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="card h-100 border-secondary border-opacity-25 bg-transparent">
+                                    <div class=" bg-black bg-opacity-25 p-2">
+                                        <img src="assets/images/diagrams/capabilities.svg" class="img-fluid" alt="Composer Capabilities Reduction">
+                                    </div>
+                                    <div class="p-2 border-top border-secondary border-opacity-25 bg-black mt-auto">
+                                        <span class="small d-block px-1 text-white-50">Composer reduces the synchronous capability invocation of each component by roughly 2/3, 
+                                            thereby reducing the attack surface and minimizing the exposure of capabilities to only those that are necessary for functional correctness.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
 </section>
-
 
 <!-- Work Experience -->
 <section class="section container d-flex flex-column justify-content-center">
-	<div class="section-header d-flex align-items-baseline justify-content-between flex-wrap gap-2 mb-4 reveal">
-		<span class="section-title">Work Experience</span>
-		<button class="expand-all-btn btn btn-outline-info btn-sm" type="button" id="expandWorkBtn">Expand All</button>
-	</div>
+    <div class="section-header d-flex align-items-baseline justify-content-between flex-wrap gap-2 mb-4 reveal">
+        <span class="section-title">Work Experience</span>
+        <button class="expand-all-btn btn btn-outline-info btn-sm" type="button" id="expandWorkBtn">Expand All</button>
+    </div>
+    <div class="accordion d-flex flex-column gap-4" id="workAccordion">
+        
+        <!-- XSTAR -->
+        <article class="accordion-item reveal" id="work-1">
+            <h2 class="accordion-header" id="work-1-heading">
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#work-1-panel"
+                    aria-expanded="false"
+                    aria-controls="work-1-panel">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2 w-100 me-3">
+                        <div class="d-flex align-items-baseline gap-3">
+                            <span class="fw-bold font-monospace text-info">02</span>
+                            <div>
+                                <h2 class="h3 mb-0">Fullstack Engineer Intern</h2>
+                                <p class="fs-6 mb-0">XSTAR Fund Management LLC · Software Development</p>
+                            </div>
+                        </div>
+                        <span class="text-secondary">February 2025 - April 2025</span>
+                    </div>
+                </button>
+            </h2>
+
+            <div id="work-1-panel" class="accordion-collapse collapse" aria-labelledby="work-1-heading">
+                <div class="accordion-body">
+                    <!-- SUMMARY -->
+                    <p>
+                        Debugged and optimized a portfolio investment management website for XSTAR hedge fund clients, 
+                        resolving critical frontend issues affecting user experience and data integrity. 
+                        Strengthened platform reliability by implementing input sanitization and validation to prevent 
+                        malformed data from reaching the database and corrupting client financial records.
+                    </p>
+                    
+                    <!-- CONTRIBUTIONS -->
+                    <div class="mb-4">
+                        <span class="d-block fw-semibold mb-2">KEY CONTRIBUTIONS</span>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Frontend Bug Resolution</span>
+                                <p class="mb-0 text-secondary">
+                                    Identified, troubleshot, and resolved frontend bugs including form input validation issues, 
+                                    SSN/ITIN formatting problems, missing fields, broken error handling, and UI state update failures 
+                                    to optimize user experience and platform reliability.
+                                </p>
+                            </div>
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Data Integrity and Input Security</span>
+                                <p class="mb-0 text-secondary">
+                                    Fixed data-handling defects impacting data integrity by implementing 
+                                    input sanitization and validation logic prior to database writes, preventing 
+                                    malformed or malicious data from corrupting the database.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- KEYS -->
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="pill hi">Typescript</span>
+                        <span class="pill hi">Fullstack Development</span>
+                        <span class="pill">Data Validation</span>
+                        <span class="pill">Input Sanitization</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Sciquel -->
+        <article class="accordion-item reveal" id="work-2">
+            <h2 class="accordion-header" id="work-2-heading">
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#work-2-panel"
+                    aria-expanded="false"
+                    aria-controls="work-2-panel">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2 w-100 me-3">
+                        <div class="d-flex align-items-baseline gap-3">
+                            <span class="fw-bold font-monospace text-info">01</span>
+                            <div>
+                                <h2 class="h3 mb-0">Backend Engineer Intern</h2>
+                                <p class="fs-6 mb-0">Sciquel · Software Development</p>
+                            </div>
+                        </div>
+                        <span class="text-secondary">June 2022 - May 2023</span>
+                    </div>
+                </button>
+            </h2>
+
+            <div id="work-2-panel" class="accordion-collapse collapse" aria-labelledby="work-2-heading">
+                <div class="accordion-body">
+                    <!-- SUMMARY -->
+                    <p>
+                        Contributed to Sciquel, a platform that makes academic research accessible to general audiences 
+                        by publishing simplified, layman-friendly summaries of peer-reviewed articles. 
+                        Designed REST APIs supporting core publishing and browsing functionality, and maintained the MongoDB 
+                        database of articles and metadata to ensure data accuracy and reliability across the platform.
+                    </p>
+                    
+                    <!-- CONTRIBUTIONS -->
+                    <div class="mb-4">
+                        <span class="d-block fw-semibold mb-2">KEY CONTRIBUTIONS</span>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">REST API Development</span>
+                                <p class="mb-0 text-secondary">
+                                    Designed and implemented REST APIs for the SciQuel website using Express, 
+                                    supporting core functionality for publishing and browsing academic research summaries.
+                                </p>
+                            </div>
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Security Feature Implementation</span>
+                                <p class="mb-0 text-secondary">
+                                    Implemented user authentication and password recovery mechanisms to ensure 
+                                    secure access to platform resources and user account integrity.
+                                </p>
+                            </div>
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Database Maintenance and Data Quality</span>
+                                <p class="mb-0 text-secondary">
+                                    Maintained MongoDB database containing rewritten science articles and metadata 
+                                    (publish timestamps, drafts, author information, source references, tags, editorial status) 
+                                    by developing automated scripts and enforcing schema validation to maximize reliability.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- KEYS -->
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="pill hi">JavaScript</span>
+                        <span class="pill hi">MongoDB</span>
+                        <span class="pill hi">REST APIs</span>
+                        <span class="pill">Express.js</span>
+                        <span class="pill">Authentication</span>
+                        <span class="pill">Database Design</span>
+                        <span class="pill">Data Validation</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
 </section>
 
 <!-- FOOTER -->
 <footer class="footer d-flex align-items-center justify-content-between flex-wrap gap-3">
-	<span class="footer-name">Son Nguyen</span>
-	<span class="footer-copy">Email: snguye75@ucsc.edu · Santa Cruz, CA · <span id="yr"></span></span>
+    <span class="footer-name">Son Nguyen</span>
+    <span class="footer-copy">Email: snguye75@ucsc.edu · Santa Cruz, CA · <span id="yr"></span></span>
 </footer>
 
 <script>
-// Dynamic year in footer
 document.getElementById('yr').textContent = new Date().getFullYear();
 
 // Scroll reveal
@@ -201,8 +684,8 @@ const io = new IntersectionObserver(entries => {
 }, { threshold: 0.08 });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-// Cursor-following glow on project cards
-document.querySelectorAll('.project-card').forEach(card => {
+// Cursor-following glow effect on accordions
+document.querySelectorAll('.accordion-item').forEach(card => {
   card.addEventListener('mousemove', e => {
     const r = card.getBoundingClientRect();
     card.style.setProperty('--mx', `${e.clientX - r.left}px`);
@@ -210,32 +693,28 @@ document.querySelectorAll('.project-card').forEach(card => {
   });
 });
 
-// Sync parent card state on Bootstrap collapse events
-document.querySelectorAll('.project-collapse').forEach(panel => {
-  const card = panel.closest('.project-card');
+// Sync parent state using native Bootstrap collapse class
+document.querySelectorAll('.accordion-collapse').forEach(panel => {
+  const card = panel.closest('.accordion-item');
   panel.addEventListener('show.bs.collapse', () => card.classList.add('is-open'));
   panel.addEventListener('hide.bs.collapse', () => card.classList.remove('is-open'));
 });
 
-// Expand All / Collapse All functionality
+// Expand All / Collapse All targeting standard .accordion-collapse
 function bindExpandBtn(btnId, sectionSelector) {
   const btn = document.getElementById(btnId);
   const section = document.querySelector(sectionSelector);
   if (!btn || !section) return;
 
-  // Helper function to sync button label with actual accordion states
   const updateBtnText = () => {
-    const panels = section.querySelectorAll('.project-collapse');
+    const panels = section.querySelectorAll('.accordion-collapse');
     if (!panels.length) return;
-    
-    // Check if at least one panel is hidden
     const anyClosed = Array.from(panels).some(p => !p.classList.contains('show'));
     btn.textContent = anyClosed ? 'Expand All' : 'Collapse All';
   };
 
-  // Toggle all cards when the button is clicked
   btn.addEventListener('click', () => {
-    const panels = section.querySelectorAll('.project-collapse');
+    const panels = section.querySelectorAll('.accordion-collapse');
     const anyClosed = Array.from(panels).some(p => !p.classList.contains('show'));
 
     panels.forEach(panel => {
@@ -244,7 +723,6 @@ function bindExpandBtn(btnId, sectionSelector) {
     });
   });
 
-  // Listen for individual card toggle events inside the section to update button label
   section.addEventListener('shown.bs.collapse', updateBtnText);
   section.addEventListener('hidden.bs.collapse', updateBtnText);
 }
@@ -257,7 +735,7 @@ function openCardFromHash() {
   if (!location.hash) return;
   const target = document.querySelector(location.hash);
   if (!target) return;
-  const panel = target.querySelector('.project-collapse');
+  const panel = target.querySelector('.accordion-collapse');
   if (panel) {
     bootstrap.Collapse.getOrCreateInstance(panel, { toggle: false }).show();
     setTimeout(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
