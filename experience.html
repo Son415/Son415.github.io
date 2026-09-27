@@ -235,6 +235,12 @@
                         <span class="d-block fw-semibold mb-2">KEY CONTRIBUTIONS</span>
                         <div class="d-flex flex-column gap-3">
                             <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Library Extension</span>
+                                <p class="mb-0 text-secondary">
+                                    Extended the ELFIO library to support in-place section removal, allowing its usage to delete targetted, unused sections.
+                                </p>
+                            </div>
+                            <div class="p-3 border-start border-3 border-info rounded-end">
                                 <span class="fw-bold d-block mb-1">Sectionifier</span>
                                 <p class="mb-0 text-secondary">
                                     Developed a tool that parses ELF binaries and rewrite them such that the text and data sections, alongside dependencies such as
@@ -243,9 +249,9 @@
                                 </p>
                             </div>
                             <div class="p-3 border-start border-3 border-info rounded-end">
-                                <span class="fw-bold d-block mb-1">Library Extension</span>
+                                <span class="fw-bold d-block mb-1">Functionality Verification</span>
                                 <p class="mb-0 text-secondary">
-                                    Extended the ELFIO library to support in-place section removal, allowing its usage to delete targetted, unused sections.
+                                    Verified that the sectionifier does not alter the functionality of the binary by validating the shared libraries through testing suites.
                                 </p>
                             </div>
                             <div class="p-3 border-start border-3 border-info rounded-end">
