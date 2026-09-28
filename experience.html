@@ -88,14 +88,12 @@
                         by applying the SARIMAX model for the purpose of job scheduling.
                     </p>
                     <p>
-                        Litecast addresses the challenge of assigning jobs to data centers in a way that minimizes carbon emissions.
-                        Across regions and time, data centers have different carbon emission profiles due to variations in energy production methods and grid conditions.
-                        As a result, a scheduler can minimize emissions by assigning jobs to execute at data centers with lower carbon intensity or during low intensity periods.
-                        This was achieved primarily through the insight that the optimality of job scheduling is dependent moreso on concordance (the ranked order of forecasts),
-                        rather than actual accuracy of the forecasts.
-                        The insight enables the use of a lightweight model without the use of CNN, allowing for rapid retraining and inference in real-time as new data
-                        is collected. Leveraging this insight, we developed a concordance-based middleware system integrated into Kubernetes to schedule jobs based on forecasted emissions, 
-                        utilizing the SARIMAX model for time series forecasting.
+                        Litecast addresses the challenge of knowing the optimal period to use electricity grid.
+                        Electricity grids across the world have different energy sources and thus have differnet times when they are carbon optimal. 
+                        Litecast utilizes a forecasting model with the insight of following the trend rather than the accuracy, to use significantly less data
+                        than competitors and be over 90% carbon optimal. This insight is encapsulated in the idea of concordance, which is the ranked order of forecasts.
+                        Leveraging this insight, we developed a concordance-based middleware system integrated into Kubernetes to schedule jobs based on forecasted emissions, 
+                        utilizing the SARIMAX model for time series forecasting rather than a neural network.
                     </p>
 
                     <!-- CONTRIBUTIONS -->
