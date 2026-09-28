@@ -5,15 +5,15 @@
 	--ink: #060922;
 	--paper: #090631; /* General Background */
 	--dim: #090d29; /* Contact/Education/Hero Card Background */
-	--rule: #750d0d8e; /* Card Border / Section Divider */
+	--rule: #470545a1; /* Card Border / Section Divider */
 	--t1: #34d4e8;
 	--t2: #38ccb9; 
 	--t3: #38cc8a;
     --gold: rgba(162, 165, 87, 0.555);
 	--grad-a: linear-gradient(135deg,var(--t1) 0%,var(--t2) 55%,var(--t3) 100%);
 	--text: #dce5f2; /* General Text / Hero Bio / Contact Values */
-	--soft: #a6b0c2; /* soft Text / Contact Labels / Education Meta */
-    --green: #00af23;
+	--soft: #a6b0c2; /* soxft Text / Contact Labels / Education Meta */
+    --green: #00B825;
 }
 
 /* ──────────────────────────────────────────────
@@ -459,7 +459,8 @@ footer {
 .accordion {
     --bs-accordion-bg: var(--dim);
     --bs-accordion-active-bg: var(--dim);
-    --bs-accordion-border-color: var(--rule);
+    --bs-accordion-border-color: transparent;
+	--bs-accordion-border-width: 0; 
     --bs-accordion-btn-color: var(--text);
     --bs-accordion-active-color: var(--text);
     --bs-accordion-color: var(--text);
@@ -474,6 +475,7 @@ footer {
 /* Accordion card base styling */
 .accordion-item {
     /* Left border + raise the z-index to above background */
+	border: 0 !important;  
     border-left: 3px solid var(--t2) !important;
     z-index: 5;
 
