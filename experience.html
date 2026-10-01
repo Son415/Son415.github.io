@@ -512,6 +512,165 @@
                 </div>
             </div>
         </article>
+
+        <!-- Composer -->
+        <article class="accordion-item reveal" id="research-3">
+            <h2 class="accordion-header" id="research-3-heading">
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#research-3-panel"
+                    aria-expanded="false"
+                    aria-controls="research-3-panel">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2 w-100 me-3">
+                        <div class="d-flex align-items-baseline gap-3">
+                            <span class="fw-bold font-monospace text-info">03</span>
+                            <div>
+                                <h2 class="h3 mb-0">Composer</h2>
+                                <p class="fs-6 mb-0">GW Systems Lab · Third Author</p>
+                            </div>
+                        </div>
+                        <span class="text-secondary">July 2024 - November 2024</span>
+                    </div>
+                </button>
+            </h2>
+
+            <div id="research-4-panel" class="accordion-collapse collapse" aria-labelledby="research-4-heading">
+                <div class="accordion-body">
+                    <!-- SUMMARY -->
+                    <p>
+                        Contributed to a NLP 
+                    </p>
+                    <p>
+                        Component-based systems offer modularity and extensibility, but reasoning about non-functional properties—how components interact, share resources, 
+                        and interfere with each other—remains challenging. Composer addresses this by taking a system specification that defines components, 
+                        their dependencies, and virtual resources, then performing static analysis to derive a system-level model capturing how these properties relate. 
+                        This enables the design of predictable, analyzable, and resource-efficient real-time systems, particularly in mixed-criticality environments where 
+                        low-assurance tasks must not compromise high-criticality guarantees. The framework orchestrates resource allocation, identifies interference paths, 
+                        and performs binary analysis to optimize stack sizes and minimize capability exposure, adhering to the Principle of Least Privilege.
+                    </p>
+
+
+                    <!-- CONTRIBUTIONS -->
+                    <div class="mb-4">
+                        <span class="d-block fw-semibold mb-2">KEY CONTRIBUTIONS</span>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Comparative Architecture Analysis</span>
+                                <p class="mb-0 text-secondary"> Compared Composer's explicit virtual resource abstraction with CAmkES's capability-based approach, 
+                                    demonstrating that Composer's user-level virtual resource allocation enables superior visibility and control over 
+                                    resource sharing and criticality-aware interference analysis that CAmkES lacks.</p>
+                            </div>
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">RTOS Integration</span>
+                                <p class="mb-0 text-secondary">
+                                    Updated and integrated Patina, an RTOS API layer providing common OS services (scheduling, channels, events, timers), 
+                                    with Composer's analysis and runtime composition framework, ensuring correct component initialization ordering and resource allocation.
+                                </p>
+                            </div>
+
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Patina Evaluation</span>
+                                <p class="mb-0 text-secondary">
+                                    Measured and evaluated Composer's initialization overhead across component types, showing that Composer incur negligible additional cost for core component types,
+                                    and showing that overhead for service-level components are minimal (on the order of microseconds).
+                                </p>
+                            </div>
+
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Capability Minimization via Static Analysis</span>
+                                <p class="mb-0 text-secondary">Applied Composer's binary and inter-component analysis to shrink synchronous invocation capability footprints, 
+                                    demonstrating significant reduction in unnecessarily granted capabilities across component-based systems to minimize attack surface.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RESULTS -->
+                    <div class="mb-4">
+                        <span class="d-block fw-semibold mb-2">RESULTS</span>
+                        <div class="d-flex flex-column gap-2">
+                            <div class="p-3 border-start border-3 border-success rounded-end">
+                                <span class="fw-bold d-block">Minimal Initialization Overhead</span>
+                                <p class="mb-0 text-secondary">Composer incurred similar initialization overhead for core component types, with additional cost being less than 10 microseconds for service-level components.</p>
+                            </div>
+                            <div class="p-3 border-start border-3 border-success rounded-end">
+                                <span class="fw-bold d-block">Attack Surface Reduction via Capability Minimization</span>
+                                <p class="mb-0 text-secondary">Composer's static analysis removed nearly two-thirds of synchronous invocation capabilities across all evaluated Patina configurations, 
+                                    reducing the capability footprint to less than 40% while maintaining functional correctness and significantly reducing attack surface.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KEYS -->
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="pill hi">C</span>
+                        <span class="pill hi">Embedded Systems</span>
+                        <span class="pill hi">Component-Based Systems</span>
+                        <span class="pill hi">Mixed-Criticality Systems</span>
+                        <span class="pill hi">Real-time Systems</span>
+                        <span class="pill">Static Analysis</span>
+                        <span class="pill">Composite OS</span>
+                        <span class="pill">Performance Analysis</span>
+                        <span class="pill">Capability-based Security</span>
+                    </div>
+
+                    <!-- DIAGRAMS -->
+                    <div class="pt-4 border-top border-secondary border-opacity-25">
+                        <div class="fw-bold mb-3">DIAGRAMS</div>
+                        <div class="row g-2 justify-content-center">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="card h-100 border-secondary border-opacity-25 bg-transparent">
+                                    <div class=" bg-black bg-opacity-25 p-2">
+                                        <img src="assets/images/diagrams/components.svg" class="img-fluid" alt="Component Based System Diagram">
+                                    </div>
+                                    <div class="p-2 border-top border-secondary border-opacity-25 bg-black mt-auto">
+                                        <span class="small d-block px-1 text-white-50">Composer's core design goals: 
+                                            (a) extensibility via component polymorphism, 
+                                            (b) minimality by omitting unused components, 
+                                            (c) principle of least privilege through capability restriction, 
+                                            (d) principle of least common mechanism by isolating different criticality levels.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="card h-100 border-secondary border-opacity-25 bg-transparent">
+                                    <div class=" bg-black bg-opacity-25 p-2">
+                                        <img src="assets/images/diagrams/composer.svg" class="img-fluid" alt="Composer Architecture Diagram">
+                                    </div>
+                                    <div class="p-2 border-top border-secondary border-opacity-25 bg-black mt-auto">
+                                        <span class="small d-block px-1 text-white-50">Composer's workflow: system specification is analyzed to derive resource allocations, 
+                                            criticality-aware interactions, and component dependencies. The resulting configuration guides runtime composition, ensuring each component receives only its designated resources and minimal necessary access rights.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="card h-100 border-secondary border-opacity-25 bg-transparent">
+                                    <div class=" bg-black bg-opacity-25 p-2">
+                                        <img src="assets/images/diagrams/initialization.svg" class="img-fluid" alt="Composer Initialization Results">
+                                    </div>
+                                    <div class="p-2 border-top border-secondary border-opacity-25 bg-black mt-auto">
+                                        <span class="small d-block px-1 text-white-50">Composer added little to negligible overhead to the initialization of core components, 
+                                            while the added initialization of service and application components are in the range of microseconds</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="card h-100 border-secondary border-opacity-25 bg-transparent">
+                                    <div class=" bg-black bg-opacity-25 p-2">
+                                        <img src="assets/images/diagrams/capabilities.svg" class="img-fluid" alt="Composer Capabilities Reduction">
+                                    </div>
+                                    <div class="p-2 border-top border-secondary border-opacity-25 bg-black mt-auto">
+                                        <span class="small d-block px-1 text-white-50">Composer reduces the synchronous capability invocation of each component by roughly 2/3, 
+                                            thereby reducing the attack surface and minimizing the exposure of capabilities to only those that are necessary for functional correctness.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
     </div>
 </section>
 
@@ -668,6 +827,229 @@
 
 </section>
 
+<!-- Projects -->
+<section class="section container d-flex flex-column justify-content-center">
+    <div class="section-header d-flex align-items-baseline justify-content-between flex-wrap gap-2 mb-4 reveal">
+        <span class="section-title">Projects</span>
+        <button class="expand-all-btn btn btn-outline-info btn-sm" type="button" id="expandProjectsBtn">Expand All</button>
+    </div>
+    <div class="accordion d-flex flex-column gap-4" id="projectsAccordion">
+        <!-- Downward Facing Camera Capstone -->
+        <article class="accordion-item reveal" id="project-1">
+            <h2 class="accordion-header" id="project-1-heading">
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#project-1-panel"
+                    aria-expanded="false"
+                    aria-controls="project-1-panel">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2 w-100 me-3">
+                        <div class="d-flex align-items-baseline gap-3">
+                            <span class="fw-bold font-monospace text-info">01</span>
+                            <div>
+                                <h2 class="h3 mb-0">Downward Facing Camera Capstone</h2>
+                                <p class="fs-6 mb-0">Visual Odometry</p>
+                            </div>
+                        </div>
+                        <span class="text-secondary">October 2024 - March 2025</span>
+                    </div>
+                </button>
+            </h2>
+
+            <div id="project-1-panel" class="accordion-collapse collapse" aria-labelledby="project-1-heading">
+                <div class="accordion-body">
+                    <!-- SUMMARY -->
+                    <p>
+                        Led a team of 3 to build a visual odometry system that estimates motion from a downward-facing camera rather than the
+                        conventional forward-facing one, using Python and OpenCV. Most visual odometry pipelines point the camera forward, 
+                        where moving objects such as people, vehicles,and other dynamic elements in the scene corrupt feature tracking and introduce drift. 
+                        Pointing the camera at the ground largely removes these sources of error, since the surface below is static and mostly
+                        unaffected by what is happening around the platform. This project investigated whether the gain in robustness could offset the loss of features, 
+                        and found that it could: the downward-facing setup achieved results competitive with a forward-facing baseline. 
+                    </p>
+
+                    <!-- CONTRIBUTIONS -->
+                    <div class="mb-4">
+                        <span class="d-block fw-semibold mb-2">KEY CONTRIBUTIONS</span>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Hardware Setup and Image Acquisition</span>
+                                <p class="mb-0 text-secondary">Led the hardware side of the project, mounting and configuring the downward-facing camera, and calibrating 
+                                    the fundamental matrix.</p>
+                            </div>
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Image Processing Pipeline</span>
+                                <p class="mb-0 text-secondary">Implemented the image processing stage in Python with OpenCV, preparing captured frames
+                                for feature detection and matching between consecutive images.</p>
+                            </div>
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Motion Estimation Algorithm</span>
+                                <p class="mb-0 text-secondary">Contributed to the motion estimation algorithm, using Affine Matrix transformations
+                                to recover camera movement from matched features across frames.</p>
+                            </div>
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Experimental Design and Evaluation</span>
+                                <p class="mb-0 text-secondary">Ran the experiments for the project and compared the downward-facing configuration
+                                against a forward-facing camera baseline under the same conditions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KEYS -->
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="pill hi">Python</span>
+                        <span class="pill hi">OpenCV</span>
+                        <span class="pill hi">Visual Odometry</span>
+                        <span class="pill hi">Computer Vision</span>
+                        <span class="pill">Hardware Integration</span>
+                        <span class="pill">Image Processing</span>
+                        <span class="pill">Experimental Evaluation</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- xv6 Container Manager -->
+        <article class="accordion-item reveal" id="project-2">
+            <h2 class="accordion-header" id="project-2-heading">
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#project-2-panel"
+                    aria-expanded="false"
+                    aria-controls="project-2-panel">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2 w-100 me-3">
+                        <div class="d-flex align-items-baseline gap-3">
+                            <span class="fw-bold font-monospace text-info">02</span>
+                            <div>
+                                <h2 class="h3 mb-0">xv6 Container Manager</h2>
+                                <p class="fs-6 mb-0">Operating Systems · Team Lead, Team of 4</p>
+                            </div>
+                        </div>
+                        <span class="text-secondary">October 2023 - November 2023</span>
+                    </div>
+                </button>
+            </h2>
+
+            <div id="project-2-panel" class="accordion-collapse collapse" aria-labelledby="project-2-heading">
+                <div class="accordion-body">
+                    <!-- SUMMARY -->
+                    <p>
+                        Led a team of four in building a simple container manager for the xv6 teaching operating system.  
+                    </p>
+
+                    <!-- CONTRIBUTIONS -->
+                    <div class="mb-4">
+                        <span class="d-block fw-semibold mb-2">KEY CONTRIBUTIONS</span>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Team Leadership</span>
+                                <p class="mb-0 text-secondary">Led a team of four, dividing the work across kernel components and coordinating
+                                integration between them.</p>
+                            </div>
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Locks and Synchronization</span>
+                                <p class="mb-0 text-secondary">Created the locking and synchronization mechanisms used to coordinate concurrent access
+                                to shared kernel state.</p>
+                            </div>
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Futex Implementation</span>
+                                <p class="mb-0 text-secondary">Developed a futex (fast userspace mutex) to provide a fast locking path, so that
+                                uncontended locks avoid costly kernel involvement.</p>
+                            </div>
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Shared Memory for Containers</span>
+                                <p class="mb-0 text-secondary">Coordinated with the container manager and incorporated shared memory into the
+                                container system.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KEYS -->
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="pill hi">C</span>
+                        <span class="pill hi">xv6</span>
+                        <span class="pill hi">Operating Systems</span>
+                        <span class="pill hi">Futex</span>
+                        <span class="pill">Synchronization</span>
+                        <span class="pill">Shared Memory</span>
+                        <span class="pill">Containers</span>
+                        <span class="pill">Team Leadership</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Game Jam Dungeon Crawler -->
+        <article class="accordion-item reveal" id="project-3">
+            <h2 class="accordion-header" id="project-3-heading">
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#project-3-panel"
+                    aria-expanded="false"
+                    aria-controls="project-3-panel">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2 w-100 me-3">
+                        <div class="d-flex align-items-baseline gap-3">
+                            <span class="fw-bold font-monospace text-info">03</span>
+                            <div>
+                                <h2 class="h3 mb-0">Dungeon Crawler Game Jam</h2>
+                                <p class="fs-6 mb-0">Game Development · Team Lead, Team of 3</p>
+                            </div>
+                        </div>
+                        <span class="text-secondary">November 2021</span>
+                    </div>
+                </button>
+            </h2>
+
+            <div id="project-3-panel" class="accordion-collapse collapse" aria-labelledby="project-3-heading">
+                <div class="accordion-body">
+                    <!-- SUMMARY -->
+                    <p>
+                        Led a team of three in a game jam, building a dungeon crawler in Python with Pygame. The team designed and
+                        built a playable game from scratch under a tight deadline, covering the game loop, player movement and combat,
+                        enemies, and dungeon layouts.
+                    </p>
+
+                    <!-- CONTRIBUTIONS -->
+                    <div class="mb-4">
+                        <span class="d-block fw-semibold mb-2">KEY CONTRIBUTIONS</span>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Team Leadership and Scoping</span>
+                                <p class="mb-0 text-secondary">Led the team, scoped features to fit the jam's time limit, and divided tasks so
+                                everyone could build in parallel.</p>
+                            </div>
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Core Gameplay Systems</span>
+                                <p class="mb-0 text-secondary">Built the game loop, player movement and controls, collision handling, and combat
+                                that make up the dungeon-crawling gameplay.</p>
+                            </div>
+                            <div class="p-3 border-start border-3 border-info rounded-end">
+                                <span class="fw-bold d-block mb-1">Enemies and Dungeon Design</span>
+                                <p class="mb-0 text-secondary">Implemented enemy behavior and dungeon room layouts to give the game a playable
+                                challenge from start to finish.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KEYS -->
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="pill hi">Python</span>
+                        <span class="pill hi">Pygame</span>
+                        <span class="pill hi">Game Development</span>
+                        <span class="pill">Team Leadership</span>
+                        <span class="pill">Game Design</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
 <!-- FOOTER -->
 <footer class="footer d-flex align-items-center justify-content-between flex-wrap gap-3">
     <span class="footer-name">Son Nguyen</span>
@@ -733,6 +1115,7 @@ function bindExpandBtn(btnId, sectionSelector) {
 
 bindExpandBtn('expandResearchBtn', 'section:nth-of-type(1)');
 bindExpandBtn('expandWorkBtn', 'section:nth-of-type(2)');
+bindExpandBtn('expandProjectsBtn', 'section:nth-of-type(3)');
 
 // URL Hash auto-opener
 function openCardFromHash() {
