@@ -245,7 +245,6 @@ function typeScatterTag(el,startDelay) {
 
 	setTimeout(() => {
 		el.classList.add('visible');
-
 		const iv = setInterval(() => {
 			i++;
 			el.innerHTML = text.slice(0,i) + '<span class="typewriter-cursor">&nbsp;</span>';
